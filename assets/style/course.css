@@ -1,0 +1,156 @@
+@font-face {
+    font-family: "grotesk";
+    src: url(../fonts/amazing_grotesk/Amazing_Grotesk_Ultra.otf);
+   }
+@font-face {
+    font-family: "grotesk-demi";
+    src: url(../fonts/amazing_grotesk/Amazing_Grotesk_Demi.otf);
+   }
+
+body {
+  font-family: 'Lato', sans-serif;
+  font-size: 14px;
+  background-color: #e7eaed;
+  color: #4e4e4e;
+}
+
+h1,h2{
+	margin: 0;
+}
+
+.white{
+	background-color: #fff;
+}
+
+.ad{
+	width: 100%;
+	height: 50px;
+	background-color: #ee2b45;
+	color: #fff;
+	font-size: 14px;
+}
+
+.ad p{
+	line-height: 50px;
+	display: inline;
+}
+
+.ad a{
+	color: #fff;
+	text-decoration: underline;
+}
+
+.header{
+	height: 165px;
+	line-height: 165px;
+	vertical-align: middle;
+}
+
+.header img{
+	margin-top: 40px;
+}
+
+.logo{
+	float: left;
+	margin-right: 245px;
+}
+
+.menu{
+	float: right;
+	margin: 0;
+	margin-right: -35px;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+
+.menu li{
+	display: inline;
+	margin-right: 35px;
+}
+
+.menu a{
+	color: #787878;
+	text-decoration: none;
+}
+
+.menu a:hover{
+	text-decoration: underline;
+}
+
+.register{
+	color: #ee2b45;
+	font-size: 14px;
+	font-weight: 700;
+	text-transform: uppercase;
+	border-bottom: 7px solid #ee2b45;
+	line-height: 30px;
+	display: inline-block;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	margin: 0px 30px 37px 0px;
+}
+
+.footer-margin{margin-top: 100px;}
+.footer{
+	height: 200px;
+	padding-top: 80px;
+}
+
+.footer-logo{
+	margin-right: 115px;
+	float: left;
+}
+
+.footer-menu{
+	height: 80px;
+	width: 370px;
+	font-size: 14px;
+	float: left;
+	margin-right: 115px;
+	margin-top: -25px;
+}
+
+.footer-menu li{
+	display: inline;
+	line-height: 30px;
+	margin-right: 70px;
+}
+
+.footer-menu a{color: #787878;}
+.footer-menu a:hover{text-decoration: underline;}
+
+.synch-mail{
+	font-size: 18px;
+	border-bottom: 5px solid #429fe6;
+	line-height: 36px;
+	display: inline-block;
+}
+
+.social{
+	float: right;
+	height: 33px;
+}
+
+.social li{
+	display: inline;
+	line-height: 32px;
+	margin-right: 10px;
+}
+
+/*==============================================================================course*/
+
+.bread-crumbs{
+	margin-bottom: 40px;
+}
+
+.bread-crumbs a, .bread-crumbs p{
+	color: #429fe6;
+	float: left;
+	margin-right: 15px;
+}
+
+.vidget{
+	height: 300px;
+	margin-top: 30px;
+}

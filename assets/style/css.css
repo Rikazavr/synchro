@@ -1,0 +1,331 @@
+@font-face {
+    font-family: "grotesk";
+    src: url(../fonts/amazing_grotesk/Amazing_Grotesk_Ultra.otf);
+   }
+@font-face {
+    font-family: "grotesk-demi";
+    src: url(../fonts/amazing_grotesk/Amazing_Grotesk_Demi.otf);
+   }
+
+body {
+  font-family: 'Lato', sans-serif;
+  font-size: 14px;
+  background-color: #e7eaed;
+  color: #4e4e4e;
+}
+
+h1,h2{
+	margin: 0;
+}
+
+a:hover{
+	text-decoration: none;
+}
+
+.row{
+/*	border: 1px solid blue;*/
+}
+
+.white{
+	background-color: #fff;
+}
+
+.ad{
+	width: 100%;
+	height: 50px;
+	background-color: #ee2b45;
+	color: #fff;
+	font-size: 14px;
+}
+
+.ad p{
+	line-height: 50px;
+	display: inline;
+}
+
+.ad a{
+	color: #fff;
+	text-decoration: underline;
+}
+
+.header{
+	height: 165px;
+	line-height: 165px;
+	vertical-align: middle;
+}
+
+.header img{
+	margin-top: 40px;
+}
+
+.logo{
+	float: left;
+	margin-right: 245px;
+}
+
+.menu{
+	float: right;
+	margin: 0;
+	margin-right: -35px;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+
+.menu li{
+	display: inline;
+	margin-right: 35px;
+}
+
+.menu a{
+	color: #787878;
+	text-decoration: none;
+}
+
+.menu a:hover{
+	text-decoration: underline;
+}
+
+.about{
+	height: 300px;
+	margin: 70px 0px;
+	padding: 70px 70px 70px 70px;
+	color: #5c5c5c;
+	background: #fff url(../imgs/05.png) no-repeat left bottom;
+	font-family: "grotesk-demi";
+}
+
+.about-title{
+	height: 300px;
+	line-height: 300px;
+	vertical-align: middle;
+	margin: -70px 70px 0px -70px;
+	padding-left: 70px;
+	font-family: "grotesk";
+}
+
+.about h1{
+	color: #429fe6;
+	font-size: 48px;
+}
+
+.about p{
+	margin-bottom: 15px;
+}
+
+.about a{
+	color: #ee2b45;
+	text-decoration: underline;
+	font-family: 'Lato';
+}
+
+.course-and-event-row{
+	margin-bottom: 30px;
+}
+
+.course-holder{
+	width: 770px;
+	float: right;
+}
+
+.event-holder{
+	width: 370px;
+	float: left;
+}
+
+.event-marker, .course-marker{
+	line-height: 30px;
+	width: 100px;
+	text-align: center;
+	vertical-align: middle;
+	background-color: #429fe6;
+	color: #fff;
+	text-transform: uppercase;
+}
+.course-marker{background-color: #ee2b45;}
+
+.event{
+	width: 370px;
+	height: 750px;
+	padding: 0px 37px;
+	position: relative;
+}
+
+.event img{
+	margin-left: -37px;
+	margin-bottom: 35px;
+	width: 370px;
+}
+.course img{
+	margin-left: -37px;
+	margin-bottom: 35px;
+	width: 770px;	
+}
+
+.event h1,.course h1,.wide-course h1{
+	font-size: 24px;
+	text-transform: uppercase;
+	margin: 0px 0px 35px 0px;
+	display: inline-block;
+	width: 300px;
+}
+
+.course{
+	width: 770px;
+	height: 750px;
+	padding: 0px 37px;
+	position: relative;
+}
+
+.wide-course{
+	min-height: 500px;
+	padding: 37px;
+	position: relative;
+}
+
+.wide-course-description{padding-right: 75px;}
+
+/*Это жестко, да. Наверное нужно сверстать это в col-md-8, а может и нет*/
+.wide-course-right-column{
+	padding-top: 70px;
+	padding-left: 15px;
+}
+
+.wide-course h2{
+	display: inline-block;
+	width: 100%;
+	font-size: 24px;
+	font-family: "grotesk";
+	margin-bottom: 37px;
+}
+
+.event-info{
+	color: #999999;
+	height: 70px;
+	margin-bottom: 20px;
+	font-size: 12px;
+/*	border: 1px solid red;*/
+}
+
+.lecture-info{
+	color: #999999;
+	height: auto;
+	min-height: 75px;
+	max-width: 345px;
+	margin-bottom: 25px;
+	font-size: 12px;
+/*	border: 1px solid red;*/
+}
+
+.data-and-time{
+	width: 33px;
+	height: 70px;
+	font-size: 12px;
+	text-align: center;
+	color: #5d5d5d;
+	float: left;
+	margin-right: 10px;
+/*	border: 1px solid blue;*/
+}
+
+/*.data-and-time:after {
+	content: " ";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}*/
+
+.data{
+	font-size: 24px;
+	color: #429fe6;
+}
+
+.register{
+	color: #ee2b45;
+	font-size: 14px;
+	font-weight: 700;
+	text-transform: uppercase;
+	border-bottom: 7px solid #ee2b45;
+	line-height: 30px;
+	display: inline-block;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	margin: 0px 30px 37px 0px;
+}
+
+.course-description{
+	width: 50%;
+	float: left;
+	padding-right: 90px;
+/*	border: 1px solid black;*/
+}
+
+.lectures-list{
+	width: 50%;
+	float: right;
+/*	border: 1px solid black;*/
+}
+
+.lecture-title{
+	font-size: 18px;
+	color: #4e4e4e;
+	margin-bottom: 5px;
+}
+
+.lectures-list h2{
+	margin-bottom: 37px;
+	font-size: 24px;
+	font-family: "grotesk";
+}
+
+/*================================================================Footer*/
+.footer-margin{margin-top: 100px;}
+.footer{
+	height: 200px;
+	padding-top: 80px;
+}
+
+.footer-logo{
+	margin-right: 115px;
+	float: left;
+}
+
+.footer-menu{
+	height: 80px;
+	width: auto;
+	max-width: 400px;
+	font-size: 14px;
+	float: left;
+	margin-right: 115px;
+	margin-top: -25px;
+}
+
+.footer-menu li{
+	display: inline;
+	line-height: 30px;
+	margin-right: 70px;
+}
+
+.footer-menu a{color: #787878;}
+.footer-menu a:hover{text-decoration: underline;}
+
+.synch-mail{
+	font-size: 18px;
+	border-bottom: 5px solid #429fe6;
+	line-height: 36px;
+	display: inline-block;
+	margin-top: -13px;
+}
+
+.social{
+	float: right;
+	height: 33px;
+	margin: 0;
+}
+
+.social li{
+	display: inline;
+	line-height: 32px;
+	margin-right: 10px;
+}
