@@ -14,6 +14,11 @@ body {
   color: #4e4e4e;
 }
 
+ul{
+	margin: 0;
+	padding: 0;
+}
+
 h1,h2{
 	margin: 0;
 }
@@ -83,6 +88,11 @@ a:hover{
 
 .menu a:hover{
 	text-decoration: underline;
+}
+
+.roll{
+	position: absolute;
+	left: 50%;
 }
 
 .about{
@@ -292,18 +302,17 @@ a:hover{
 }
 
 .footer-menu{
-	height: 80px;
-	width: auto;
-	max-width: 400px;
+	max-width: 600px;
 	font-size: 14px;
 	float: left;
-	margin-right: 115px;
-	margin-top: -25px;
+	margin-top: -15px;
 }
 
 .footer-menu li{
-	display: inline;
-	line-height: 30px;
+	display: inline-block;
+	line-height: 45px;
+	width: 75px;
+	vertical-align: top;
 	margin-right: 70px;
 }
 
@@ -312,10 +321,12 @@ a:hover{
 
 .synch-mail{
 	font-size: 18px;
+	font-weight: 700;
 	border-bottom: 5px solid #429fe6;
 	line-height: 36px;
 	display: inline-block;
 	margin-top: -13px;
+	margin-left: 35px;
 }
 
 .social{
