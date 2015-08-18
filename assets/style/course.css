@@ -91,53 +91,6 @@ h1,h2{
 	margin: 0px 30px 37px 0px;
 }
 
-.footer-margin{margin-top: 100px;}
-.footer{
-	height: 200px;
-	padding-top: 80px;
-}
-
-.footer-logo{
-	margin-right: 115px;
-	float: left;
-}
-
-.footer-menu{
-	height: 80px;
-	width: 370px;
-	font-size: 14px;
-	float: left;
-	margin-right: 115px;
-	margin-top: -25px;
-}
-
-.footer-menu li{
-	display: inline;
-	line-height: 30px;
-	margin-right: 70px;
-}
-
-.footer-menu a{color: #787878;}
-.footer-menu a:hover{text-decoration: underline;}
-
-.synch-mail{
-	font-size: 18px;
-	border-bottom: 5px solid #429fe6;
-	line-height: 36px;
-	display: inline-block;
-}
-
-.social{
-	float: right;
-	height: 33px;
-}
-
-.social li{
-	display: inline;
-	line-height: 32px;
-	margin-right: 10px;
-}
-
 /*==============================================================================course*/
 
 .bread-crumbs{
@@ -150,6 +103,19 @@ h1,h2{
 	margin-right: 15px;
 }
 
-.vidget{
-	margin-top: 30px;
+.course-page-title h1{
+	font-size: 36px;
+	text-align: center;
+	text-transform: uppercase;
+	margin: 65px auto;
+	width: 50%;
+}
+
+.course-page-description{
+	padding: 75px;
+}
+
+.course-page-description p{
+	margin-bottom: 40px;
+	font-size: 18px;
 }
