@@ -286,6 +286,11 @@ a:hover{
 }
 
 /*================================================================Footer*/
+
+.addthis_native_toolbox{
+	margin: 70px 0;
+}
+
 .footer-margin{margin-top: 100px;}
 .footer{
 	height: 200px;
@@ -336,3 +341,74 @@ a:hover{
 	line-height: 32px;
 	margin-right: 10px;
 }
+
+/*============================================================================== Bread crumbs */
+
+.bread-crumbs{
+	margin-bottom: 40px;
+}
+
+.bread-crumbs a, .bread-crumbs p{
+	color: #429fe6;
+	float: left;
+	margin-right: 15px;
+}
+
+.bread-crumbs a:hover{text-decoration:underline;}
+
+/*============================================================================== Lecture_page */
+
+.speaker{
+	padding: 30px;
+	margin-bottom: 50px;
+	font-size: 18px;
+}
+
+.speaker h1{
+	text-transform: uppercase;
+	width: 200px;
+	margin-bottom: 30px;
+}
+
+.profession{
+	width: 370px;
+	margin-bottom: 30px;
+	color: #999999;
+}
+
+.speaker-contacts{
+	font-weight: 700;
+	height: 50px;
+	margin-top: 30px;
+	/*border: 1px solid black;*/
+}
+
+/*.speaker-contacts *{*/
+/*	float:left;*/
+/*}*/
+
+.speaker-contacts ul{
+	display: inline;
+	float: left;
+	margin-right: 75px;
+}
+
+.speaker-contacts li{
+	display: inline;
+}
+
+.speaker-contacts li a{
+	text-decoration: none;
+}
+
+.speaker-contacts p{
+	float: left;
+	margin-right: 75px;
+}
+
+.speaker a{
+	color: #429fe6;
+	text-decoration: underline;
+}
+/*============================================================================== Bread crumbs */
+/*============================================================================== Bread crumbs */
