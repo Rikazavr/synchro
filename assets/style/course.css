@@ -14,7 +14,7 @@ body {
   color: #4e4e4e;
 }
 
-h1,h2{
+h1,h2,h3{
 	margin: 0;
 }
 
@@ -112,10 +112,68 @@ h1,h2{
 }
 
 .course-page-description{
-	padding: 75px;
+	padding: 75px 75px 0px 75px;
 }
 
 .course-page-description p{
 	margin-bottom: 40px;
 	font-size: 18px;
+}
+
+.register-button{
+	height: 55px;
+	width: 270px;
+	background-color: #ee2b45;
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 12px;
+	line-height: 55px;
+	text-align: center;
+	margin: 0 auto;
+	display: none;
+}
+
+.vidget{
+	padding: 35px 0;
+}
+
+
+.lecture{
+}
+
+h2{
+	font-size: 18px;
+	text-transform: uppercase;
+}
+h3{
+	text-transform: uppercase;
+}
+
+.lecture-info{
+	color: #999999;
+	height: auto;
+	min-height: 75px;
+	margin-top: 20px;
+	font-size: 12px;
+}
+
+.data-and-time{
+	width: 33px;
+	height: 70px;
+	font-size: 12px;
+	text-align: center;
+	color: #5d5d5d;
+	float: left;
+	margin-right: 15px;
+	/*border: 1px solid black;*/
+}
+
+.data{
+	font-size: 24px;
+	color: #429fe6;
+}
+
+.addthis_native_toolbox{
+	margin: 70px 0;
 }

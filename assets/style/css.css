@@ -19,7 +19,7 @@ ul{
 	padding: 0;
 }
 
-h1,h2{
+h1,h2,h3{
 	margin: 0;
 }
 
@@ -237,14 +237,6 @@ a:hover{
 /*	border: 1px solid blue;*/
 }
 
-/*.data-and-time:after {
-	content: " ";
-	display: block;
-	height: 0;
-	clear: both;
-	visibility: hidden;
-}*/
-
 .data{
 	font-size: 24px;
 	color: #429fe6;
@@ -281,6 +273,10 @@ a:hover{
 	font-size: 18px;
 	color: #4e4e4e;
 	margin-bottom: 5px;
+}
+
+.lecture-title:hover{
+	color: #429fe6;
 }
 
 .lectures-list h2{

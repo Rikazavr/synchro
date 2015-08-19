@@ -99,3 +99,62 @@ a.control_next:hover{
 .slider-event-data{
   font-weight: 700; 
 }
+
+/*========================================================================course-slider*/
+#course-slider{
+  position: relative;
+  overflow: hidden;
+  margin-left: 15px;
+}
+
+#course-slider ul {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+#course-slider ul li {
+  position: relative;
+  display: block;
+  float: left;
+  margin: 0;
+  padding: 0;
+  width: 570px;
+  height: 320px;
+}
+
+
+.course-nav-holder{
+  width: 100px;
+  height: 30px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 999;
+  padding: 0;
+}
+
+#course-control-prev, #course-control-next {
+  display: inline-block;
+  width: 50px;
+  height: 30px;
+  cursor: pointer;
+  background-color: #69696a;
+}
+
+#course-control-next{
+  background-image: url(../imgs/arrow-n.png);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#course-control-prev{
+  float: left;
+  background-image: url(../imgs/arrow-p.png);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#course-control-prev:hover, #course-control-next:hover{
+  background-color: #429fe6;
+}
