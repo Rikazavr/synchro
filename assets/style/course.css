@@ -77,7 +77,7 @@ h1,h2,h3{
 	text-decoration: underline;
 }
 
-.register{
+.course-page-register{
 	color: #ee2b45;
 	font-size: 14px;
 	font-weight: 700;
@@ -88,7 +88,7 @@ h1,h2,h3{
 	position: absolute;
 	bottom: 0;
 	right: 0;
-	margin: 0px 30px 37px 0px;
+	margin-right: 70px;
 }
 
 /*==============================================================================course*/
@@ -134,8 +134,6 @@ h1,h2,h3{
 	display: none;
 }
 
-/*.vidget{margin: 70px 0;}*/
-
 h1{
 	margin: 35px 0;
 }
@@ -163,7 +161,6 @@ h3{
 	color: #5d5d5d;
 	float: left;
 	margin-right: 15px;
-	/*border: 1px solid black;*/
 }
 
 .data{
@@ -177,6 +174,9 @@ h3{
 
 .course-page-lecture{
 	padding: 0px 75px;
+	min-height: 500px;
+	position: relative;
+	/*border: 1px solid black;*/
 }
 
 .course-page-lector{
@@ -211,13 +211,9 @@ h3{
 	font-size: 18px;
 }
 
-/*.course-page-lecture-description p{*/
-/*	margin-bottom: 30px;*/
-/*}*/
-
 .horisontal-line{
 	border-top: 1px solid #dbdbdb;
 	height: 30px;
-	margin-top: 30px;
-	padding-bottom: 30px;
+	width: 1025px;
+	margin: 35px 0px 35px 75px;
 }
