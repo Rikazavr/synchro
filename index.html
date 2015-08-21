@@ -2,14 +2,15 @@
 <head>
 	<title>синхронизация</title>
 	<meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
     <link rel="stylesheet" href="assets/style/bootstrap.css">
     <link rel="stylesheet" href="assets/style/css.css">
     <link rel="stylesheet" href="assets/style/slider.css">
     <link href='http://fonts.googleapis.com/css?family=Lato:400,300,700,100' rel='stylesheet' type='text/css'>
 
     <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-	<script src="assets/js/index_1.js"></script>
+	<script src="assets/js/index.js"></script>
 </head>
 <body>
 	<div class="ad">
@@ -34,10 +35,7 @@
 						<a href="#">расписание</a>
 					</li>
 					<li>
-						<a href="#">лекторы</a>
-					</li>
-					<li>
-						<a href="#">материалы</a>
+						<a href="lecturers.html">лекторы</a>
 					</li>
 					<li>
 						<a href="about.html">о проекте</a>
@@ -174,7 +172,7 @@
 		</div>
 <!-- =============================================================================Row -->
 		<div class="row">
-			<div class="col-md-12">
+			<div class="col-md-12 wide-img">
 				<img src="assets/imgs/04.png">
 			</div>
 		</div>
@@ -256,14 +254,11 @@
 							<ul class="footer-menu">
 								<li>
 									<a href="#">Курсы</a>
-									<a href="#">Материалы</a>
+									<a href="lecturers.html">Лекторы</a>
 								</li>
 								<li>
 									<a href="#">Расписание</a>
 									<a href="about.html">О проекте</a>
-								</li>
-								<li>
-									<a href="#">Лекторы</a>
 								</li>
 							</ul>
 						<ul class="social">
@@ -287,4 +282,59 @@
 				</div>
 			</div>
 		</div>
+<!-- =============================================================================Hamburger menu -->
+<div class="row ham">
+	<div class="col-md-12">
+		<a id="menu-button"></a>
+		<div id="hamburger-menu">
+			<nav>
+				<a class="videofile" href="#">Курсы</a>
+				<a class="hamabout" href="#">Расписание</a>
+				<a class="look" href="#">Лекторы</a>
+				<a class="order" href="#">О проекте</a>
+			</nav>
+		</div>
+		<div id="overlay"></div>
+	</div>
+</div>
+
+<a href="javascript:void(0)" id="rocketmeluncur" class="showrocket" ><i></i></a>
+
+<script>
+	jQuery(window).scroll(function(){
+    if(jQuery(window).scrollTop()<50){
+        jQuery('#rocketmeluncur').slideUp(500);
+    }else{
+        jQuery('#rocketmeluncur').slideDown(500);
+    }
+    var ftrocketmeluncur = jQuery("#ft")[0] ? jQuery("#ft")[0] : jQuery(document.body)[0];
+    var scrolltoprocketmeluncur = $('rocketmeluncur');
+var viewPortHeightrocketmeluncur = parseInt(document.documentElement.clientHeight);
+var scrollHeightrocketmeluncur = parseInt(document.body.getBoundingClientRect().top);
+var basewrocketmeluncur = parseInt(ftrocketmeluncur.clientWidth);
+var swrocketmeluncur = scrolltoprocketmeluncur.clientWidth;
+if (basewrocketmeluncur < 1000) {
+var leftrocketmeluncur = parseInt(fetchOffset(ftrocketmeluncur)['left']);
+leftrocketmeluncur = leftrocketmeluncur < swrocketmeluncur ? leftrocketmeluncur * 2 - swrocketmeluncur : leftrocketmeluncur;
+scrolltoprocketmeluncur.style.left = ( basewrocketmeluncur + leftrocketmeluncur ) + 'px';
+} else {
+scrolltoprocketmeluncur.style.left = 'auto';
+scrolltoprocketmeluncur.style.right = '10px';
+}
+})
+
+jQuery('#rocketmeluncur').click(function(){
+    jQuery("html, body").animate({ scrollTop: '0px',display:'none'},{
+            duration: 600,  
+            easing: 'linear'
+        });
+    
+    var self = this;
+    this.className += ' '+"launchrocket";
+    setTimeout(function(){
+      self.className = 'showrocket';
+    },800)
+});
+</script>
+	
 </body>

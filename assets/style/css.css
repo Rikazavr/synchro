@@ -59,13 +59,10 @@ a:hover{
 	vertical-align: middle;
 }
 
-.header img{
-	margin-top: 40px;
-}
-
 .logo{
 	float: left;
 	margin-right: 245px;
+	margin-top: 40px;
 }
 
 .menu{
@@ -128,6 +125,8 @@ a:hover{
 	font-family: 'Lato';
 }
 
+/*==============================================================================================Event*/
+
 .course-and-event-row{
 	margin-bottom: 30px;
 }
@@ -155,7 +154,7 @@ a:hover{
 
 .event{
 	width: 370px;
-	height: 750px;
+	min-height: 750px;
 	padding: 0px 37px;
 	position: relative;
 }
@@ -181,7 +180,7 @@ a:hover{
 
 .course{
 	width: 770px;
-	height: 750px;
+	min-height: 750px;
 	padding: 0px 37px;
 	position: relative;
 }
@@ -260,13 +259,11 @@ a:hover{
 	width: 50%;
 	float: left;
 	padding-right: 90px;
-/*	border: 1px solid black;*/
 }
 
 .lectures-list{
 	width: 50%;
 	float: right;
-/*	border: 1px solid black;*/
 }
 
 .lecture-title{
@@ -367,12 +364,12 @@ a:hover{
 .speaker h1{
 	text-transform: uppercase;
 	width: 200px;
-	margin-bottom: 30px;
+	margin-bottom: 25px;
 }
 
 .profession{
 	width: 370px;
-	margin-bottom: 30px;
+	margin-bottom: 25px;
 	color: #999999;
 }
 
@@ -410,5 +407,319 @@ a:hover{
 	color: #429fe6;
 	text-decoration: underline;
 }
+/*============================================================================== Lecturers */
+.lecturer, .lecturer-left{
+	background: #fff;
+	margin-bottom: 30px;
+	width: 570px;
+	min-height: 225px;
+	padding: 25px;
+	-webkit-box-sizing: border-box;
+  	-moz-box-sizing: border-box;
+  	box-sizing: border-box;
+}
+
+.lecturer img, .lecturer-left img{
+	float: left;
+	margin-right: 30px;
+}
+
+.lecturer-info{
+	height: 135px;
+	width: 520px;
+}
+
+.lecturer-info a{
+	color: #429fe6;
+}
+.lecturer-info a:hover{
+	color: #ee2b45;
+}
+
+.lecturer-info p{
+	color: #999999;
+	margin-bottom: 15px;
+}
+
+.lecturer h1, .lecturer-left h1{
+	font-size: 14px;
+	text-transform: uppercase;
+}
+
+.lecturer-left{
+	margin-right: 30px;
+	float: left;
+}
+
+.lector-link{
+	color: #ee2b45;
+	text-decoration: underline;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	margin: 0 0 25px 30px;
+}
+
 /*============================================================================== Bread crumbs */
 /*============================================================================== Bread crumbs */
+/*============================================================================== Bread crumbs */
+/*============================================================================== Bread crumbs */
+
+/*----hamberger----*/
+
+.ham {
+    visibility: hidden;
+    font-family: 'Lato', sans-serif;
+  	font-size: 14px;
+}
+
+#menu-button {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  display: block;
+  width: 50px;
+  height: 50px;
+  background: #429fe6;
+  z-index: 200;
+}
+#menu-button:after {
+  position: absolute;
+  content: "☰";
+  font-size: 30px;
+  color: #FFF;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+}
+#menu-button:hover {
+  opacity: .8;
+}
+
+#menu-button.on:after {
+  content: "x";
+}
+
+#overlay {
+  display: none;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: 99;
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+#overlay.open {
+  display: block;
+}
+
+#hamburger-menu {
+  height: 0;
+  width: 0;
+  background: #429fe6;
+  position: fixed;
+  top: 0px;
+  left: 50px;
+  z-index: 101;
+  overflow: hidden;
+}
+#hamburger-menu nav {
+  padding: 30px;
+  z-index: 101;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+#hamburger-menu nav a {
+  display: block;
+  padding: 15px;
+  height: 1em;
+  color: #ffffff;
+  font-size: 1em;
+  line-height: 1em;
+  text-decoration: none;
+  overflow: hidden;
+}
+#hamburger-menu nav a:hover {
+  cursor: pointer;
+  color: #FFF;
+  background: rgba(255, 255, 255, 0.02);
+}
+
+/*----end-hamberger----*/
+
+/*---scroll-top---*/
+
+#scrolltop {
+  display: none;
+}
+
+#rocketmeluncur {
+  position: fixed;
+  bottom: 50px;
+  z-index: 7;
+  display: none;
+  visibility: hidden;
+  width: 26px;
+  height: 48px;
+  right: 25px;
+  background: url(../imgs/top-normal.png) no-repeat 50% 0;
+  opacity: 0;
+  -webkit-transition: visibility .6s cubic-bezier(0.6, 0.04, 0.98, 0.335), opacity .6s cubic-bezier(0.6, 0.04, 0.98, 0.335), -webkit-transform .6s cubic-bezier(0.6, 0.04, 0.98, 0.335);
+  -moz-transition: visibility .6s cubic-bezier(0.6, 0.04, 0.98, 0.335), opacity .6s cubic-bezier(0.6, 0.04, 0.98, 0.335), -moz-transform .6s cubic-bezier(0.6, 0.04, 0.98, 0.335);
+  transition: visibility .6s cubic-bezier(0.6, 0.04, 0.98, 0.335), opacity .6s cubic-bezier(0.6, 0.04, 0.98, 0.335), transform .6s cubic-bezier(0.6, 0.04, 0.98, 0.335);
+}
+
+#rocketmeluncur i {
+  display: block;
+  margin-top: 48px;
+  height: 0px;
+  background: url(../imgs/top-normal.png) no-repeat 50% -48px;
+  opacity: .5;
+  -webkit-transition: -webkit-transform .2s;
+  -moz-transition: -moz-transform .2s;
+  transition: transform .2s;
+  -webkit-transform-origin: 50% 0;
+  -moz-transform-origin: 50% 0;
+  transform-origin: 50% 0
+}
+
+#rocketmeluncur:hover {
+  background-position: 50% -48px
+}
+
+#rocketmeluncur:hover i {
+  background-position: 50% 100%;
+  -webkit-animation: flaming .7s infinite;
+  -moz-animation: flaming .7s infinite;
+  animation: flaming .7s infinite
+}
+
+#rocketmeluncur.showrocket {
+  visibility: visible;
+  opacity: 1
+}
+
+#rocketmeluncur.launchrocket {
+  background-position: 50% -48px;
+  opacity: 0;
+  -webkit-transform: translateY(-800px);
+  -moz-transform: translateY(-800px);
+  -ms-transform: translateY(-800px);
+  transform: translateY(-800px);
+  pointer-events: none
+}
+
+#rocketmeluncur.launchrocket i {
+  background-position: 50% 100%;
+  -webkit-transform: scale(1.4, 3.2);
+  -moz-transform: scale(1.4, 3.2);
+  transform: scale(1.4, 3.2)
+}
+
+/*---end-scroll-top---*/
+
+@media (max-width: 768px) {
+	.container{
+		width: 100%;
+		padding:0;
+		margin:0;
+	}
+	
+	#slider, .roll, .nav-holder, .footer-logo, .footer-menu{
+		display:none;
+	}
+
+	.ad{
+		width: 100%;
+		height: 50px;
+		background-color: #ee2b45;
+		color: #fff;
+		font-size: 12px;
+		padding-left: 65px;
+	}
+
+	.header{
+		height: 150px;
+		line-height: 50px;
+		vertical-align: middle;
+	}
+
+	.logo {
+		position: relative;
+		left: 50%;
+		margin-left: -130px;
+		margin-top: 90px;
+	}
+	
+	.menu{display: none;}
+	
+	.about{
+		height: auto;
+		margin: 50px 0px;
+		padding: 25px;
+	}
+	.about-title{
+		height: 100px;
+		line-height: 100px;
+		vertical-align: middle;
+		margin: 0;
+	}
+	.about h1{
+		font-size: 30px;
+	}
+	.about p{margin-bottom: 35px;}
+
+	.event-holder, .course-holder, .wide-course{
+		width: 100%;
+	}
+	.course, .event, .wide-course{
+		padding: 0 25px;
+		width: 100%;
+		height: 100%;
+	}
+	.wide-img img, .course img, .event img {
+		width: 100%;
+		margin-left: -25px;
+	}
+	
+	.lectures-list {
+		width: 100%;
+	}
+	
+	.course-description{
+		width: 100%;
+		padding-right: 50px;
+		margin-bottom: 50px;
+	}
+
+	.lectures-list{
+		width: 100%;
+	}
+	
+	.register{
+	color: #ee2b45;
+	font-size: 14px;
+	font-weight: 700;
+	text-transform: uppercase;
+	border-bottom: 7px solid #ee2b45;
+	line-height: 30px;
+	display: inline-block;
+	margin: 0px 15px 15px 0px;
+	position: none;
+	}
+	
+	.ham {
+        visibility: visible;
+    }
+    
+    .ad {
+    	position: fixed;
+    	z-index: 90;
+    }
+  
+}

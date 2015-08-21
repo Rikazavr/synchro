@@ -134,14 +134,11 @@ h1,h2,h3{
 	display: none;
 }
 
-.vidget{
-	padding: 35px 0;
+/*.vidget{margin: 70px 0;}*/
+
+h1{
+	margin: 35px 0;
 }
-
-
-.lecture{
-}
-
 h2{
 	font-size: 18px;
 	text-transform: uppercase;
@@ -176,4 +173,51 @@ h3{
 
 .addthis_native_toolbox{
 	margin: 70px 0;
+}
+
+.course-page-lecture{
+	padding: 0px 75px;
+}
+
+.course-page-lector{
+	height: 135px;
+	width: 373px;
+	font-size: 12px;
+	margin-top: 30px;
+}
+
+.course-page-lector img{
+	float: right;
+	margin-left: 35px;
+}
+
+.course-page-lector h3{
+	font-size: 14px;
+	margin-top: 15px;
+}
+
+.course-page-lector a{
+	color: #ee2b45;
+	text-decoration: underline;
+	position: absolute;
+	bottom: 0;
+}
+
+.course-page-profession {color: #999999;}
+
+.course-page-lecture-description{
+	max-width: 615px;
+	margin-left: 55px;
+	font-size: 18px;
+}
+
+/*.course-page-lecture-description p{*/
+/*	margin-bottom: 30px;*/
+/*}*/
+
+.horisontal-line{
+	border-top: 1px solid #dbdbdb;
+	height: 30px;
+	margin-top: 30px;
+	padding-bottom: 30px;
 }
