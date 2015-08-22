@@ -7,11 +7,16 @@
     src: url(../fonts/amazing_grotesk/Amazing_Grotesk_Demi.otf);
    }
 
+html {
+	overflow-x: hidden;	
+}
+
 body {
   font-family: 'Lato', sans-serif;
   font-size: 14px;
   background-color: #e7eaed;
   color: #4e4e4e;
+  padding: 0;
 }
 
 ul{
@@ -190,6 +195,7 @@ a:hover{
 	min-height: 500px;
 	padding: 37px;
 	position: relative;
+	margin-bottom: 35px;
 }
 
 .wide-course-description{padding-right: 75px;}
@@ -585,7 +591,7 @@ a:hover{
 
 .course-page-lecture{
 	padding: 0px 75px;
-	min-height: 500px;
+	min-height: 400px;
 	position: relative;
 }
 
@@ -596,10 +602,15 @@ a:hover{
 	margin-top: 30px;
 }
 
-.course-page-lector img{
-	float: right;
-	margin-left: 35px;
+.course-page-lecture-left img{
+	width: 373px;
 }
+
+/*.course-page-lector img{*/
+/*	width: 373px;*/
+/*	float: right;*/
+/*	margin-left: 35px;*/
+/*}*/
 
 .course-page-lector h3{
 	font-size: 14px;
@@ -846,7 +857,13 @@ a:hover{
 		color: #fff;
 		font-size: 12px;
 		padding-left: 65px;
+		position: fixed;
+    	z-index: 90;
 	}
+	
+	.ham {
+        visibility: visible;
+    }
 
 	.header{
 		height: 150px;
@@ -859,6 +876,11 @@ a:hover{
 		left: 50%;
 		margin-left: -130px;
 		margin-top: 90px;
+		margin-bottom: 50px;
+	}
+	
+	.bread-crumbs {
+		padding-left: 30px;
 	}
 	
 	.menu{display: none;}
@@ -876,34 +898,42 @@ a:hover{
 	}
 	.about h1{
 		font-size: 30px;
+		margin-left: -25px;
 	}
 	.about p{margin-bottom: 35px;}
 
-	.event-holder, .course-holder, .wide-course{
+	.event-holder, .course-holder, .wide-course, .event-info{
 		width: 100%;
 	}
 	.course, .event, .wide-course{
-		padding: 0 25px;
+		padding: 0 25px 35px 25px;
 		width: 100%;
-		height: 100%;
+		margin-bottom: 35px;
 	}
-	.wide-img img, .course img, .event img {
-		width: 100%;
+	.course img, .event img {
+		width: 119%;
 		margin-left: -25px;
 	}
-	
-	.lectures-list {
+	.wide-img img{
 		width: 100%;
+	}
+	
+	.event h1,.course h1,.wide-course h1{
+		font-size: 24px;
+		text-transform: uppercase;
+		margin-bottom: 25px;
 	}
 	
 	.course-description{
 		width: 100%;
-		padding-right: 50px;
-		margin-bottom: 50px;
+		margin-bottom: 35px;
+		padding: 0;
 	}
-
+	
 	.lectures-list{
 		width: 100%;
+		float: none;
+		margin-bottom: 35px;
 	}
 	
 	.register{
@@ -916,15 +946,61 @@ a:hover{
 		display: inline-block;
 		margin: 0px 15px 15px 0px;
 		position: none;
+		float: left;
 	}
 	
-	.ham {
-        visibility: visible;
-    }
-    
-    .ad {
-    	position: fixed;
-    	z-index: 90;
-    }
-  
+	.course-page-description {
+		padding: 10px 25px 0px 25px;
+	}
+	
+	.course-page-lecture-description{
+		max-width: 100%;
+		margin: 0 25px;
+	}
+	
+	.vidget {
+		padding: 50px 0px 50px 100px;
+	}
+	
+	.course-page-lecture {
+		padding: 0px;
+		padding-bottom: 60px;
+	}
+	
+	.course-page-lecture img{
+		width: 100%;
+	}
+	
+	.course-page-lecture h1 {
+		text-align: center;
+	}
+	
+	.course-page-lector {
+		padding-left: 25px;
+	}
+	
+	.horisontal-line{
+		display: none;
+	}
+	
+	.footer{
+		height: 150px;
+		padding-top: 0;
+		padding-left: 55px;
+	}
+	.synch-mail{
+		margin: 15px auto;
+	}
+	
+	.social{
+		float: none;
+		height: 33px;
+		margin: 15px 0;
+	}
+	
+	.social li{
+		display: inline;
+		line-height: 32px;
+		margin-right: 10px;
+	}
 }
