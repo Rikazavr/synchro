@@ -95,7 +95,7 @@ a:hover{
 
 /*=================================================================================Content*/
 
-.about{
+.index-about{
 	height: 300px;
 	margin: 70px 0px;
 	padding: 70px 70px 70px 70px;
@@ -104,7 +104,7 @@ a:hover{
 	font-family: "grotesk-demi";
 }
 
-.about-title{
+.index-about-title{
 	height: 300px;
 	line-height: 300px;
 	vertical-align: middle;
@@ -113,19 +113,94 @@ a:hover{
 	font-family: "grotesk";
 }
 
+.index-about h1{
+	color: #429fe6;
+	font-size: 48px;
+}
+
+.index-about p{
+	margin-bottom: 15px;
+}
+
+.index-about a{
+	color: #ee2b45;
+	text-decoration: underline;
+	font-family: 'Lato';
+}
+
+/*================================================================ About*/
+
+.about{
+	min-height: 550px;
+	margin-top: 70px;
+	padding: 125px 50px 0px 50px;
+	color: #5c5c5c;
+	background: #fff url(../imgs/about.png) no-repeat left bottom;
+	font-family: "grotesk-demi";
+	font-size: 18px;
+}
+
+.about-title{
+	padding-left: 70px;
+	font-family: "grotesk";
+}
+.about-description{
+	min-height: 350px;
+	position: relative;
+}
+
 .about h1{
 	color: #429fe6;
 	font-size: 48px;
 }
 
 .about p{
+	margin-bottom: 55px;
+}
+
+.about .synch-mail{
+	font-family: 'Lato';
+	position: absolute;
+	bottom: 0;
+	margin: 0;
+}
+
+.appreciate{
+	text-align: center;
+	padding-bottom: 55px;
+}
+.appreciate h1{
+	margin: 35px 0;
+	font-size: 30px;
+}
+.appreciate p{
+	font-size: 18px;
 	margin-bottom: 15px;
 }
 
-.about a{
-	color: #ee2b45;
-	text-decoration: underline;
-	font-family: 'Lato';
+.authors{
+	padding: 0 40px 45px 40px;
+}
+
+.authors h1{
+	margin: 55px 0;
+	font-size: 48px;
+}
+
+.author-last-child{
+	width: 200px;
+}
+
+.author{
+	width: 200px;
+	margin-right: 95px;
+}
+
+.author h3, .author-last-child h3{
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 14px;
+	margin: 20px 0;
 }
 
 /*==============================================================================================Event*/
@@ -885,22 +960,22 @@ a:hover{
 	
 	.menu{display: none;}
 	
-	.about{
+	.index-about{
 		height: auto;
 		margin: 50px 0px;
 		padding: 25px;
 	}
-	.about-title{
+	.index-about-title{
 		height: 100px;
 		line-height: 100px;
 		vertical-align: middle;
 		margin: 0;
 	}
-	.about h1{
+	.index-about h1{
 		font-size: 30px;
 		margin-left: -25px;
 	}
-	.about p{margin-bottom: 35px;}
+	.index-about p{margin-bottom: 35px;}
 
 	.event-holder, .course-holder, .wide-course, .event-info{
 		width: 100%;
@@ -1002,5 +1077,10 @@ a:hover{
 		display: inline;
 		line-height: 32px;
 		margin-right: 10px;
+	}
+	
+	.courses-title img {
+		width: 100%;
+		height: 80px;
 	}
 }
