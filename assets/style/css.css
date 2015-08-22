@@ -27,10 +27,6 @@ a:hover{
 	text-decoration: none;
 }
 
-.row{
-/*	border: 1px solid blue;*/
-}
-
 .white{
 	background-color: #fff;
 }
@@ -91,6 +87,8 @@ a:hover{
 	position: absolute;
 	left: 50%;
 }
+
+/*=================================================================================Content*/
 
 .about{
 	height: 300px;
@@ -215,28 +213,24 @@ a:hover{
 	height: 70px;
 	margin-bottom: 20px;
 	font-size: 12px;
-/*	border: 1px solid red;*/
 }
 
 .lecture-info{
 	color: #999999;
-	height: auto;
-	min-height: 75px;
+	min-height: 65px;
 	max-width: 345px;
-	margin-bottom: 25px;
+	margin-bottom: 15px;
 	font-size: 12px;
-/*	border: 1px solid red;*/
 }
 
 .data-and-time{
 	width: 33px;
-	height: 70px;
+	height: 65px;
 	font-size: 12px;
 	text-align: center;
 	color: #5d5d5d;
 	float: left;
-	margin-right: 10px;
-/*	border: 1px solid blue;*/
+	margin-right: 5px;
 }
 
 .data{
@@ -257,6 +251,10 @@ a:hover{
 	right: 0;
 	margin: 0px 30px 37px 0px;
 }
+.register:hover{
+	color: #c20020;
+	border-color: #c20020;
+}
 
 .course-description{
 	width: 50%;
@@ -271,16 +269,18 @@ a:hover{
 
 .lecture-title{
 	font-size: 18px;
-	color: #4e4e4e;
+	line-height: 1em;
 	margin-bottom: 5px;
 }
-
-.lecture-title:hover{
+.lecture-title a{
+	color: #4e4e4e;
+}
+.lecture-title a:hover{
 	color: #429fe6;
 }
 
 .lectures-list h2{
-	margin-bottom: 37px;
+	margin-bottom: 30px;
 	font-size: 24px;
 	font-family: "grotesk";
 }
@@ -448,7 +448,6 @@ a:hover{
 	margin-right: 30px;
 	float: left;
 }
-
 .lector-link{
 	color: #ee2b45;
 	text-decoration: underline;
@@ -467,8 +466,12 @@ a:hover{
 
 .scedule-marker-holder{
 	height: 100%;
-	background: url(../imgs/01.png) 100%;
-	background-position: left top;
+	background-color: #f6f6f6;
+	overflow: hidden;
+}
+
+.scedule-marker-holder img{
+	width: 100%;
 }
 
 .scedule-event-marker, .scedule-course-marker{
@@ -479,6 +482,7 @@ a:hover{
 	background-color: #429fe6;
 	color: #fff;
 	text-transform: uppercase;
+	position: absolute;
 }
 .scedule-course-marker{background-color: #ee2b45;}
 
@@ -493,7 +497,7 @@ a:hover{
 }
 
 .scedule-item-title{
-	width: 300px;
+	width: 375px;
 	height: 100%;
 	padding: 10px 25px 10px 0;
 	float: left;
@@ -505,21 +509,28 @@ a:hover{
 	font-size: 12px;
 	text-transform: uppercase;
 }
+.scedule-item-title a:hover{
+	text-decoration: underline;
+}
 
 .scedule-item-title h1{
 	font-size: 18px;
 }
 
 .scedule-item-place{
-	width: 250px;
+	width: 255px;
 	height: 100%;
 	float: left;
 	padding-top: 15px;
 	color: #999999;
 }
 
+/*.place{*/
+/*	margin-top:5px;*/
+/*}*/
+
 .scedule-item-lector{
-	width: 150px;
+	width: 100px;
 	height: 100%;
 	float: left;
 	padding-top: 15px;
@@ -541,13 +552,42 @@ a:hover{
 	margin-top: -25px;
 }
 
+.scedule-link:hover{
+	color: #c20020;
+	border-color: #c20020;
+}
 
+/*============================================================================== Courses */
 
-/*============================================================================== Bread crumbs */
-/*============================================================================== Bread crumbs */
-/*============================================================================== Bread crumbs */
+.courses-anchor{
+	display: block;
+	height: 30px;
+	width: 100px;
+	line-height: 30px;
+}
 
-/*----hamberger----*/
+.courses-title{
+	height: 70px;
+	font-size: 36px;
+	font-weight: 700;
+	color: #fff;
+	text-transform: uppercase;
+	text-align: center;
+	line-height: 70px;
+	margin: 35px 0;
+}
+.courses-title img{
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 0;
+}
+.courses-title p{
+	z-index: 10;
+	position: relative;
+}
+
+/*============================================================================== Burger */
 
 .ham {
     visibility: hidden;
@@ -632,9 +672,7 @@ a:hover{
   background: rgba(255, 255, 255, 0.02);
 }
 
-/*----end-hamberger----*/
-
-/*---scroll-top---*/
+/*============================================================================== Scroll */
 
 #scrolltop {
   display: none;
@@ -703,7 +741,7 @@ a:hover{
   transform: scale(1.4, 3.2)
 }
 
-/*---end-scroll-top---*/
+/*============================================================================== Mobile */
 
 @media (max-width: 768px) {
 	.container{
