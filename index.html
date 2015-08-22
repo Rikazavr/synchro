@@ -57,7 +57,13 @@
 					    	<img src="assets/imgs/06.png">
 					    </li>
 					    <li>
-					    	<h1>Slide2</h1>
+					    	<div class="slider-text-holder">
+						    	<h1><span class="title-with-back">Возвращение Ван Гога</span></h1>
+						    	<p>Разовая лекция с Чуворкиной Ольгой<br>
+						    	<span class="slider-event-data">25 августа (ВТ) в 20.00</span>
+						    	</p>
+					    	</div>
+					    	<img src="assets/imgs/vangog.png">
 					    </li>
 					    <li>
 					    	<h1>Slide3</h1>
@@ -97,9 +103,7 @@
 						<p>Событие</p>
 					</div>
 					<div class="white event">
-						<div class="event-img-holder">
-							<img src="assets/imgs/00.png">
-						</div>	
+						<img src="assets/imgs/00.png">
 						<h1>Возвращение Ван Гога</h1>
 						<div class="event-info">
 							<div class="data-and-time">
@@ -165,7 +169,7 @@
 								<p>Бобров переулок, д. 6 стр.1</p>
 							</div>
 						</div>
-						<a href="#" class="register">Записаться</a>
+						<a href="glagolom.html" class="register">Записаться</a>
 					</div>
 				</div>
 			</div>
@@ -199,18 +203,20 @@
 						<p class="data">03</p>
 						<p>20.00</p>
 					</div>
-					<p>Свободное Пространство "Циферблат" в городе Москва</p>
+					<p>Библиотека им. И. С. Тургенева</p>
+					<p>Бобров переулок, д. 6 стр.1</p>
 				</div>
 				<p class="lecture-title"><a href="#">«Передвижники:художественный переворот»</a></p>
 				<div class="lecture-info">
 					<div class="data-and-time">
-						<p>АВГ</p>
-						<p class="data">09</p>
-						<p>12.00</p>
+						<p>СЕН</p>
+						<p class="data">17</p>
+						<p>20.00</p>
 					</div>
 					<p>Свободное Пространство "Циферблат" в городе Москва</p>
 				</div>
-				<p class="lecture-title"><a href="#">«Особый путь» русского искусства»</a></p>
+				<p class="lecture-title"><a href="#">«Русский модерн в среде мировых модернов.
+»</a></p>
 				<div class="lecture-info">
 					<div class="data-and-time">
 						<p>СЕН</p>
@@ -296,10 +302,10 @@
 		<a id="menu-button"></a>
 		<div id="hamburger-menu">
 			<nav>
-				<a class="videofile" href="#">Курсы</a>
-				<a class="hamabout" href="#">Расписание</a>
-				<a class="look" href="#">Лекторы</a>
-				<a class="order" href="#">О проекте</a>
+				<a class="videofile" href="courses.html">Курсы</a>
+				<a class="hamabout" href="scedule.html">Расписание</a>
+				<a class="look" href="lecturers.html">Лекторы</a>
+				<a class="order" href="about.html">О проекте</a>
 			</nav>
 		</div>
 		<div id="overlay"></div>
@@ -317,19 +323,19 @@
     }
     var ftrocketmeluncur = jQuery("#ft")[0] ? jQuery("#ft")[0] : jQuery(document.body)[0];
     var scrolltoprocketmeluncur = $('rocketmeluncur');
-var viewPortHeightrocketmeluncur = parseInt(document.documentElement.clientHeight);
-var scrollHeightrocketmeluncur = parseInt(document.body.getBoundingClientRect().top);
-var basewrocketmeluncur = parseInt(ftrocketmeluncur.clientWidth);
-var swrocketmeluncur = scrolltoprocketmeluncur.clientWidth;
-if (basewrocketmeluncur < 1000) {
-var leftrocketmeluncur = parseInt(fetchOffset(ftrocketmeluncur)['left']);
-leftrocketmeluncur = leftrocketmeluncur < swrocketmeluncur ? leftrocketmeluncur * 2 - swrocketmeluncur : leftrocketmeluncur;
-scrolltoprocketmeluncur.style.left = ( basewrocketmeluncur + leftrocketmeluncur ) + 'px';
-} else {
-scrolltoprocketmeluncur.style.left = 'auto';
-scrolltoprocketmeluncur.style.right = '10px';
-}
-})
+	var viewPortHeightrocketmeluncur = parseInt(document.documentElement.clientHeight);
+	var scrollHeightrocketmeluncur = parseInt(document.body.getBoundingClientRect().top);
+	var basewrocketmeluncur = parseInt(ftrocketmeluncur.clientWidth);
+	var swrocketmeluncur = scrolltoprocketmeluncur.clientWidth;
+	if (basewrocketmeluncur < 1000) {
+	var leftrocketmeluncur = parseInt(fetchOffset(ftrocketmeluncur)['left']);
+	leftrocketmeluncur = leftrocketmeluncur < swrocketmeluncur ? leftrocketmeluncur * 2 - swrocketmeluncur : leftrocketmeluncur;
+	scrolltoprocketmeluncur.style.left = ( basewrocketmeluncur + leftrocketmeluncur ) + 'px';
+	} else {
+	scrolltoprocketmeluncur.style.left = 'auto';
+	scrolltoprocketmeluncur.style.right = '10px';
+	}
+	})
 
 jQuery('#rocketmeluncur').click(function(){
     jQuery("html, body").animate({ scrollTop: '0px',display:'none'},{
