@@ -74,7 +74,8 @@
 }
 
 #slider p{
-  line-height: 18px;
+  line-height: 24px;
+  font-size: 18px;
 }
 
 #slider h1{
@@ -86,13 +87,13 @@
 }
 
 .title-with-back{
-  line-height: 80px;
+  line-height: 85px;
   display: inline-block;
   background-color: #429fe6;
   color: #fff;
   font-weight: 700;
   vertical-align: middle;
-  padding: 10px 40px 15px 50px;
+  padding: 15px 50px;
   margin-left: -50px;
 }
 

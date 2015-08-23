@@ -38,7 +38,7 @@ a:hover{
 
 .ad{
 	width: 100%;
-	height: 50px;
+	height: 10px;
 	background-color: #ee2b45;
 	color: #fff;
 	font-size: 14px;
@@ -98,19 +98,17 @@ a:hover{
 .index-about{
 	height: 300px;
 	margin: 70px 0px;
-	padding: 70px 70px 70px 70px;
+	padding: 90px 70px 70px 70px;
 	color: #5c5c5c;
 	background: #fff url(../imgs/05.png) no-repeat left bottom;
-	font-family: "grotesk-demi";
 }
 
 .index-about-title{
 	height: 300px;
 	line-height: 300px;
 	vertical-align: middle;
-	margin: -70px 70px 0px -70px;
+	margin: -80px 70px 0px -70px;
 	padding-left: 70px;
-	font-family: "grotesk";
 }
 
 .index-about h1{
@@ -132,17 +130,15 @@ a:hover{
 
 .about{
 	min-height: 550px;
-	margin-top: 70px;
+	margin-top: 10px;
 	padding: 125px 50px 0px 50px;
 	color: #5c5c5c;
 	background: #fff url(../imgs/about.png) no-repeat left bottom;
-	font-family: "grotesk-demi";
 	font-size: 18px;
 }
 
 .about-title{
 	padding-left: 70px;
-	font-family: "grotesk";
 }
 .about-description{
 	min-height: 350px;
@@ -161,7 +157,6 @@ a:hover{
 .about .synch-mail{
 	font-family: 'Lato';
 	position: absolute;
-	bottom: 0;
 	margin: 0;
 }
 
@@ -212,6 +207,7 @@ a:hover{
 .course-holder{
 	width: 770px;
 	float: right;
+	margin-bottom: 30px;
 }
 
 .event-holder{
@@ -276,16 +272,16 @@ a:hover{
 .wide-course-description{padding-right: 75px;}
 
 /*Это жестко, да. Наверное нужно сверстать это в col-md-8, а может и нет*/
-.wide-course-right-column{
+.wide-course-right-column {
 	padding-top: 70px;
 	padding-left: 15px;
 }
+
 
 .wide-course h2{
 	display: inline-block;
 	width: 100%;
 	font-size: 24px;
-	font-family: "grotesk";
 	margin-bottom: 37px;
 }
 
@@ -300,8 +296,9 @@ a:hover{
 	color: #999999;
 	min-height: 65px;
 	max-width: 345px;
-	margin-bottom: 15px;
+	margin-bottom: 35px;
 	font-size: 12px;
+	/*border: 1px solid black;*/
 }
 
 .data-and-time{
@@ -311,12 +308,20 @@ a:hover{
 	text-align: center;
 	color: #5d5d5d;
 	float: left;
-	margin-right: 5px;
+	margin-right: 10px;
+	/*border: 1px solid black;*/
 }
 
 .data{
 	font-size: 24px;
 	color: #429fe6;
+}
+
+.place{
+	color: #999999;
+	margin: 35px 0;
+	font-size: 14px;
+
 }
 
 .register{
@@ -340,7 +345,7 @@ a:hover{
 .course-description{
 	width: 50%;
 	float: left;
-	padding-right: 90px;
+	padding-right: 70px;
 }
 
 .lectures-list{
@@ -363,23 +368,24 @@ a:hover{
 .lectures-list h2{
 	margin-bottom: 30px;
 	font-size: 24px;
-	font-family: "grotesk";
 }
 
 /*================================================================Footer*/
 
 .addthis_native_toolbox{
-	margin: 70px 0;
+	margin: 40px;
+	margin-bottom:-40;
 }
 
 .footer-margin{margin-top: 100px;}
 .footer{
-	height: 200px;
-	padding-top: 80px;
+	height: 100px;
+	padding-top: 40px;
 }
 
 .footer-logo{
-	margin-right: 115px;
+	margin-top: -20px;
+	margin-right: 100px;
 	float: left;
 }
 
@@ -395,20 +401,20 @@ a:hover{
 	line-height: 45px;
 	width: 75px;
 	vertical-align: top;
-	margin-right: 70px;
+	margin-right: 35px;
 }
 
 .footer-menu a{color: #787878;}
 .footer-menu a:hover{text-decoration: underline;}
 
 .synch-mail{
-	font-size: 18px;
+	font-size: 16px;
 	font-weight: 700;
 	border-bottom: 5px solid #429fe6;
-	line-height: 36px;
+	line-height: 30px;
 	display: inline-block;
-	margin-top: -13px;
-	margin-left: 35px;
+	margin-top: -10px;
+	margin-left: 45px;
 }
 
 .social{
@@ -644,8 +650,20 @@ a:hover{
 	width: 50%;
 }
 
+.course-title-img{
+	text-align: center;
+}
+
 .course-page-description{
 	padding: 75px 75px 0px 75px;
+}
+
+.course-page-description h1{
+	font-size: 36px;
+	text-align: center;
+	text-transform: uppercase;
+	margin: 0 auto 55px auto;
+	width: 50%;
 }
 
 .course-page-description p{
@@ -843,74 +861,10 @@ a:hover{
   background: rgba(255, 255, 255, 0.02);
 }
 
-/*============================================================================== Scroll */
-
-#scrolltop {
-  display: none;
-}
-
-#rocketmeluncur {
-  position: fixed;
-  bottom: 50px;
-  z-index: 7;
-  display: none;
-  visibility: hidden;
-  width: 26px;
-  height: 48px;
-  right: 25px;
-  background: url(../imgs/top-normal.png) no-repeat 50% 0;
-  opacity: 0;
-  -webkit-transition: visibility .6s cubic-bezier(0.6, 0.04, 0.98, 0.335), opacity .6s cubic-bezier(0.6, 0.04, 0.98, 0.335), -webkit-transform .6s cubic-bezier(0.6, 0.04, 0.98, 0.335);
-  -moz-transition: visibility .6s cubic-bezier(0.6, 0.04, 0.98, 0.335), opacity .6s cubic-bezier(0.6, 0.04, 0.98, 0.335), -moz-transform .6s cubic-bezier(0.6, 0.04, 0.98, 0.335);
-  transition: visibility .6s cubic-bezier(0.6, 0.04, 0.98, 0.335), opacity .6s cubic-bezier(0.6, 0.04, 0.98, 0.335), transform .6s cubic-bezier(0.6, 0.04, 0.98, 0.335);
-}
-
-#rocketmeluncur i {
-  display: block;
-  margin-top: 48px;
-  height: 0px;
-  background: url(../imgs/top-normal.png) no-repeat 50% -48px;
-  opacity: .5;
-  -webkit-transition: -webkit-transform .2s;
-  -moz-transition: -moz-transform .2s;
-  transition: transform .2s;
-  -webkit-transform-origin: 50% 0;
-  -moz-transform-origin: 50% 0;
-  transform-origin: 50% 0
-}
-
-#rocketmeluncur:hover {
-  background-position: 50% -48px
-}
-
-#rocketmeluncur:hover i {
-  background-position: 50% 100%;
-  -webkit-animation: flaming .7s infinite;
-  -moz-animation: flaming .7s infinite;
-  animation: flaming .7s infinite
-}
-
-#rocketmeluncur.showrocket {
-  visibility: visible;
-  opacity: 1
-}
-
-#rocketmeluncur.launchrocket {
-  background-position: 50% -48px;
-  opacity: 0;
-  -webkit-transform: translateY(-800px);
-  -moz-transform: translateY(-800px);
-  -ms-transform: translateY(-800px);
-  transform: translateY(-800px);
-  pointer-events: none
-}
-
-#rocketmeluncur.launchrocket i {
-  background-position: 50% 100%;
-  -webkit-transform: scale(1.4, 3.2);
-  -moz-transform: scale(1.4, 3.2);
-  transform: scale(1.4, 3.2)
-}
+.price {
+	text-align: center;
+}	
+/*===================================end-hamburger======================================*/
 
 /*============================================================================== Mobile */
 
@@ -926,6 +880,7 @@ a:hover{
 	}
 
 	.ad{
+		display: block;
 		width: 100%;
 		height: 50px;
 		background-color: #ee2b45;
@@ -949,7 +904,7 @@ a:hover{
 	.logo {
 		position: relative;
 		left: 50%;
-		margin-left: -130px;
+		margin-left: -160px;
 		margin-top: 90px;
 		margin-bottom: 50px;
 	}
@@ -1033,6 +988,10 @@ a:hover{
 		float: left;
 	}
 	
+	.course-title-img{
+		width: 100%;
+	}
+	
 	.course-page-description {
 		padding: 10px 25px 0px 25px;
 	}
@@ -1043,7 +1002,7 @@ a:hover{
 	}
 	
 	.vidget {
-		padding: 50px 0px 50px 100px;
+		padding: 40px 0px 40px 100px;
 	}
 	
 	.course-page-lecture {
