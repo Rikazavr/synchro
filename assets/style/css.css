@@ -414,7 +414,7 @@ a:hover{
 	line-height: 30px;
 	display: inline-block;
 	margin-top: -10px;
-	margin-left: 45px;
+	margin-left: 95px;
 }
 
 .social{
@@ -500,13 +500,20 @@ a:hover{
 	min-height: 225px;
 	padding: 25px;
 	-webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
+  	-moz-box-sizing: border-box;
+  	box-sizing: border-box;
 }
 
 .lecturer img, .lecturer-left img{
 	float: left;
 	margin-right: 30px;
+}
+
+.event-page-avatar{
+	height: 270px;
+	width: 134px;
+	float: left;
+	margin-right: 35px;
 }
 
 .lecturer-info{
@@ -699,18 +706,18 @@ a:hover{
 	width: 373px;
 }
 
-/*.course-page-lector img{*/
-/*	width: 373px;*/
-/*	float: right;*/
-/*	margin-left: 35px;*/
-/*}*/
+.course-page-lector img{
+	width: 134px;
+	float: right;
+	margin-left: 35px;
+}
 
 .course-page-lector h3{
 	font-size: 14px;
 	margin-top: 15px;
 }
 
-.course-page-lector a{
+.course-page-lector a, .lector-page-link{
 	color: #ee2b45;
 	text-decoration: underline;
 	position: absolute;
@@ -1004,7 +1011,7 @@ a:hover{
 	.vidget {
 		padding: 40px 0px 40px 100px;
 	}
-	
+
 	.course-page-lecture {
 		padding: 0px;
 		padding-bottom: 60px;
@@ -1027,7 +1034,7 @@ a:hover{
 	}
 	
 	.footer{
-		height: 150px;
+		height: 130px;
 		padding-top: 0;
 		padding-left: 55px;
 	}
