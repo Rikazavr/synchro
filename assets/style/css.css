@@ -128,6 +128,7 @@ a:hover{
 
 /*================================================================ About*/
 
+
 .about{
 	min-height: 550px;
 	margin-top: 10px;
@@ -238,6 +239,7 @@ a:hover{
 	margin-bottom: 35px;
 	width: 370px;
 }
+
 .course img{
 	margin-left: -37px;
 	margin-bottom: 35px;
@@ -247,12 +249,14 @@ a:hover{
 	width: 1170px;
 }
 
-.event h1,.course h1,.wide-course h1{
+.event h1,.course h1,.wide-course h1, .index-event-title{
 	font-size: 24px;
+	font-weight: 700;
 	text-transform: uppercase;
 	margin: 0px 0px 35px 0px;
 	display: inline-block;
 	width: 300px;
+	color: #4e4e4e;
 }
 
 .course{
@@ -271,7 +275,6 @@ a:hover{
 
 .wide-course-description{padding-right: 75px;}
 
-/*Это жестко, да. Наверное нужно сверстать это в col-md-8, а может и нет*/
 .wide-course-right-column {
 	padding-top: 70px;
 	padding-left: 15px;
@@ -298,7 +301,6 @@ a:hover{
 	max-width: 345px;
 	margin-bottom: 35px;
 	font-size: 12px;
-	/*border: 1px solid black;*/
 }
 
 .data-and-time{
@@ -309,7 +311,6 @@ a:hover{
 	color: #5d5d5d;
 	float: left;
 	margin-right: 10px;
-	/*border: 1px solid black;*/
 }
 
 .data{
@@ -399,7 +400,6 @@ a:hover{
 .footer-menu li{
 	display: inline-block;
 	line-height: 45px;
-	width: 75px;
 	vertical-align: top;
 	margin-right: 35px;
 }
@@ -955,11 +955,12 @@ a:hover{
 		width: 100%;
 	}
 	
-	.event h1,.course h1,.wide-course h1{
+	.index-event-title{
 		font-size: 24px;
 		text-transform: uppercase;
 		margin-bottom: 25px;
 	}
+	.index-event-title:hover {color:#429fe6;}
 	
 	.course-description{
 		width: 100%;
