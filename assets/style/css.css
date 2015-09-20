@@ -357,12 +357,65 @@ a:hover{
 	margin-bottom: 30px;
 	font-size: 24px;
 }
+/*============================================================================== Event-page */
+
+.event-page-lecturer{
+	padding: 75px;
+}
+
+.event-page-avatar{
+	height: 350px;
+	width: 134px;
+	float: left;
+	margin-right: 35px;
+}
+
+/*================================================================Send form*/
+#feedback-form {
+  max-width: 400px;
+  padding: 2%;
+  border-radius: 3px;
+  background: #f1f1f1;
+}
+#feedback-form [required] {
+  width: 100%;
+  box-sizing: border-box;
+  margin: 2px 0 2% 0;
+  padding: 2%;
+  border: 1px solid rgba(0,0,0,.1);
+  border-radius: 3px;
+  box-shadow: 0 1px 2px -1px rgba(0,0,0,.2) inset, 0 0 transparent;
+}
+#feedback-form [required]:hover {
+  border-color: #7eb4ea;
+  box-shadow: 0 1px 2px -1px rgba(0,0,0,.2) inset, 0 0 transparent;
+}
+#feedback-form [required]:focus {
+  outline: none;
+  border-color: #7eb4ea;
+  box-shadow: 0 1px 2px -1px rgba(0,0,0,.2) inset, 0 0 4px rgba(35,146,243,.5);
+  transition: .2s linear;
+}
+#feedback-form [type="submit"] {
+  padding: 2%;
+  border: none;
+  border-radius: 3px;
+  box-shadow: 0 0 0 1px rgba(0,0,0,.2) inset;
+  background: #669acc;
+  color: #fff;
+}
+#feedback-form [type="submit"]:hover {
+  background: #5c90c2;
+}
+#feedback-form [type="submit"]:focus {
+  box-shadow: 0 1px 1px #fff, inset 0 1px 2px rgba(0,0,0,.8), inset 0 -1px 0 rgba(0,0,0,.05);
+}
 
 /*================================================================Footer*/
 
 .addthis_native_toolbox{
-	margin: 40px;
-	margin-bottom:-40;
+	width: 460px;
+	margin: 40px auto;
 }
 
 .footer-margin{margin-top: 100px;}
@@ -416,20 +469,6 @@ a:hover{
 	margin-right: 10px;
 }
 
-/*============================================================================== Bread crumbs */
-
-.bread-crumbs{
-	margin-bottom: 40px;
-}
-
-.bread-crumbs a, .bread-crumbs p{
-	color: #429fe6;
-	float: left;
-	margin-right: 15px;
-}
-
-.bread-crumbs a:hover{text-decoration:underline;}
-
 /*============================================================================== Lecture_page */
 
 .speaker{
@@ -481,6 +520,7 @@ a:hover{
 	color: #429fe6;
 	text-decoration: underline;
 }
+
 /*============================================================================== Lecturers */
 .lecturer, .lecturer-left{
 	background: #fff;
@@ -497,13 +537,6 @@ a:hover{
 	float: left;
 	margin-right: 30px;
 	width: 134px;
-}
-
-.event-page-avatar{
-	height: 300px;
-	width: 134px;
-	float: left;
-	margin-right: 35px;
 }
 
 .lecturer-info{
@@ -649,6 +682,7 @@ a:hover{
 	height: 170px;
 	padding: 50px 0;
 }
+
 .lecture-vidget{
 	height: 50px;
 	position: relative;
@@ -656,7 +690,7 @@ a:hover{
 
 .vidget-holder{
 	margin: 0 auto;
-	width: 150px;
+	width: 160px;
 }
 
 .lecture-vidget-holder{
@@ -899,7 +933,6 @@ a:hover{
 .price {
 	text-align: center;
 }	
-/*===================================end-hamburger======================================*/
 
 /*============================================================================== Mobile */
 
@@ -910,7 +943,7 @@ a:hover{
 		margin:0;
 	}
 	
-	#slider, .roll, .nav-holder, .footer-logo, .footer-menu{
+	#slider, .menu, .nav-holder, .footer-logo, .footer-menu{
 		display:none;
 	}
 
@@ -943,9 +976,7 @@ a:hover{
 		margin-top: 90px;
 		margin-bottom: 50px;
 	}
-	
-	.menu{display: none;}
-	
+
 	.index-about{
 		height: auto;
 		margin: 50px 0px;
@@ -1024,6 +1055,11 @@ a:hover{
 		margin-bottom: 35px;
 	}
 	
+	.course-page-title h1{
+		font-size: 30px;
+		margin: 65px 0px 65px 25px;
+		text-align: left;
+	}
 	.course-page-description {
 		padding: 10px 25px 0px 25px;
 	}
@@ -1033,8 +1069,14 @@ a:hover{
 		margin: 0 25px;
 	}
 	
-	.vidget-holder{
-		width: 200px;
+	.lecture-vidget{
+		height: 100px;
+	}
+
+	.lecture-vidget-holder{
+		width: 160px;
+		position: relative;
+		margin: 0 auto;
 	}
 
 	.course-page-lecture {
@@ -1083,6 +1125,9 @@ a:hover{
 		line-height: 32px;
 		margin-right: 10px;
 	}
+	.about ul{
+		display: none;
+	}
 	
 	.courses-title img {
 		width: 100%;
@@ -1090,7 +1135,7 @@ a:hover{
 	}
 	
 	.about{
-		padding: 50px 0px 0px 50px;
+		padding: 35px 25px 55px 35px;
 	}
 	.about-title{
 		padding-left: 0px;
@@ -1099,5 +1144,13 @@ a:hover{
 
 	.author{
 		margin-bottom: 35px;
+	}
+	
+	.event-page-avatar{
+		display: none;
+	}
+	
+	.addthis_native_toolbox{
+		width: 90%;
 	}
 }
