@@ -26,10 +26,15 @@ a:hover{
 .white{
 	background-color: #fff;
 }
+.ad-norma {
+	width: 100%;
+	height: 7px;
+	background-color: #ee2b45;	
+}
 
 .ad{
 	width: 100%;
-	height: 10px;
+	height: 50px;
 	background-color: #ee2b45;
 	color: #fff;
 	font-size: 14px;
@@ -45,6 +50,7 @@ a:hover{
 	text-decoration: underline;
 }
 
+
 .header{
 	height: 165px;
 	line-height: 165px;
@@ -53,7 +59,7 @@ a:hover{
 
 .logo{
 	float: left;
-	margin-right: 245px;
+	margin-right: 215px;
 	margin-top: 40px;
 }
 
@@ -79,11 +85,70 @@ a:hover{
 	text-decoration: underline;
 }
 
-/*=================================================================================Content*/
+/*=================================================================================Confirm subscription*/
+.logo_Confirm{
+	text-align: center;
+	margin-top: 30px;
+	margin-bottom: 10px;
+}
 
+.scedule-register-button-2{
+	float: center;
+	display: block;
+	margin: 0 auto;
+	width: 250px;
+	height: 30px;
+	background: #e7e7e8;
+    background: linear-gradient(to top, #ccc 0%, #e7e7e8 100%);
+	border-bottom: 3px solid #999999;
+	text-align: center;
+	line-height: 27px;
+	color: #666666;
+	font-weight: 500;
+}
+
+.scedule-register-button-2:hover{
+	background: #66ccff;
+    background: linear-gradient(to top, #45a1e8 0%, #66ccff 100%);
+    border-bottom: 3px solid #3887c3;
+    color: #fff;
+}
+
+.scedule-register-button-2:active{
+	background: #45a1e8;
+	border: none;
+}
+
+
+.thanks{
+	min-height: 350px;
+	margin-top: 10px;
+	padding: 50px 50px 0px 50px;
+	color: #5c5c5c;
+	background: #fff url(../imgs/about-2.png) no-repeat center;
+	font-size: 18px;
+}
+
+.thanks h1{
+	color: #429fe6;
+	font-size: 48px;
+	text-align: center;
+}
+
+.thanks p{
+	margin-bottom: 55px;
+	text-align: center;
+}
+.hr {
+    border: none; /* Убираем границу */
+    background-color: red; /* Цвет линии */
+    color: red; /* Цвет линии для IE6-7 */
+    height: 2px; /* Толщина линии */
+}
+/*=================================================================================Content*/
 .index-about{
 	height: 300px;
-	margin: 70px 0px;
+	margin: 25px 0px 35px 0px;
 	padding: 90px 70px 70px 70px;
 	color: #5c5c5c;
 	background: #fff url(../imgs/05.png) no-repeat left bottom;
@@ -142,9 +207,12 @@ a:hover{
 }
 
 .about .synch-mail{
-	font-family: 'Lato';
-	position: absolute;
-	margin: 0;
+	float: left;
+	margin-right: 100px;
+}
+
+.social li{
+	display: block;
 }
 
 .appreciate{
@@ -152,7 +220,7 @@ a:hover{
 	padding-bottom: 55px;
 }
 .appreciate h1{
-	margin: 35px 0;
+	margin: 55px 0;
 	font-size: 30px;
 }
 .appreciate p{
@@ -160,8 +228,12 @@ a:hover{
 	margin-bottom: 15px;
 }
 
+.costil {
+	margin-bottom:35px;
+}
+
 .authors{
-	padding: 0 40px 45px 40px;
+	padding: 0 40px 0px 40px;
 }
 
 .authors h1{
@@ -176,6 +248,23 @@ a:hover{
 .author{
 	width: 200px;
 	margin-right: 95px;
+	margin-bottom: 60px;
+}
+
+.costil-2 {
+	width: 200px
+	padding: 0 40px 45px 40px;
+}
+
+.costil-2  h3{
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 14px;
+	margin: 20px 0;
+}
+
+.costil-3 {
+	margin-left: 20%;
 }
 
 .author h3, .author-last-child h3{
@@ -185,11 +274,17 @@ a:hover{
 	margin: 20px 0;
 }
 
-/*==============================================================================================Event*/
+/*==============================================================================================Dinner*/
 
-.course-and-event-row{
-	margin-bottom: 30px;
+.dinner{
+	background: #fff;
 }
+
+.dinner-img{
+	
+}
+
+/*==============================================================================================Event*/
 
 .course-holder{
 	width: 770px;
@@ -197,9 +292,21 @@ a:hover{
 	margin-bottom: 30px;
 }
 
+.course-holder-left{
+	width: 770px;
+	float: left;
+	margin-bottom: 30px;
+}
+
 .event-holder{
 	width: 370px;
 	float: left;
+}
+
+.event-holder-margin {
+	width: 370px;
+	float: left;
+	margin-left: 30px;
 }
 
 .event-marker, .course-marker{
@@ -257,7 +364,7 @@ a:hover{
 	min-height: 500px;
 	padding: 37px;
 	position: relative;
-	margin-bottom: 35px;
+	margin-bottom: 30px;
 }
 
 .wide-course-description{padding-right: 75px;}
@@ -280,6 +387,12 @@ a:hover{
 	height: 70px;
 	margin-bottom: 20px;
 	font-size: 12px;
+}
+
+.event-left {
+margin-left: 30px;
+width: 370px;
+float: left;
 }
 
 .lecture-info{
@@ -369,51 +482,166 @@ a:hover{
 	float: left;
 	margin-right: 35px;
 }
+/*============================================================================== Event-page */
+.course-title-img {
+	text-align: center;
+}
+
+.course-title-img img{
+	width: 585px;
+}
+.event-page-title h1{
+		font-size: 30px;
+		margin: 65px 0px 65px 25px;
+		text-align: left;
+}
+.event-page-title h1{
+	font-size: 36px;
+	text-align: center;
+	text-transform: uppercase;
+	margin: 65px auto;
+	width: 50%;
+}
+.event-page-description {
+		padding: 10px 25px 0px 25px;
+	}
+.event-page-description{
+	padding: 25px 75px 20px 75px;
+}
+
+.event-page-description h1{
+	font-size: 36px;
+	text-align: center;
+	text-transform: uppercase;
+	margin: 0 auto 55px auto;
+	width: 50%;
+}
+
+.event-page-description p{
+	margin-bottom: 20px;
+	font-size: 18px;
+}
 
 /*================================================================Send form*/
-#feedback-form {
-  max-width: 400px;
-  padding-top: 30px;
-  text-align: center;
-  font-size: 16px;
+
+.subscribe-form{
+	margin: 0 auto;
+	width: 600px;
+	/*border: 1px solid black;*/
 }
-#feedback-form [required] {
- 	display: block;
-	width: 300px;
+
+.subscribe-form h2{
+	margin-bottom: 25px;
+}
+
+.subscribe-form-input{
+	display: block;
+	float: left;
+	width: 350px;
 	height: 50px;
-	background-color: #ffffff;
+	margin-right: 25px;
+	background-color: #fff;
 	outline: none;
 	border: none;
 	padding-left: 25px;
 	font-size: 14px;
 }
 
-#feedback-form [required]:hover {
-  border-color: #ee2b45;
-
-}
-#feedback-form [required]:focus {
-  outline: none;
-  border-color: #7eb4ea;
-  transition: .2s linear;
-}
-#feedback-form [type="submit"] {
-  padding: 2%;
+.subscribe-form-btn{
   width: 200px;
   height: 50px;
+  line-height: 50px;
   border: none;
   background: #999999;
   color: #fff;
-  float: right;
-  margin-top: -50px;
-  margin-right: -120px;
   text-transform: uppercase;
   font-size: 14px;
-}
-#feedback-form [type="submit"]:hover {
-  background: #ee2b45;
+  cursor: pointer;
 }
 
+.subscribe-form-btn:hover{
+	background: #ee2b45;
+}
+
+.form-holder{
+	margin: 0 auto;
+	width: 700px;
+}
+
+/*================================================================Send form*/
+
+.popup-hide{
+	opacity: 0;
+    visibility: hidden;
+}
+
+.popup-show{
+	opacity: 1;
+    visibility: visible;
+}
+
+.popup-subscribe-form{
+	width: 550px;
+	position: fixed;
+	z-index: 1000;
+	right: 50px;
+	bottom: 50px;
+	background: #fff;
+	padding: 35px;
+	/*box-shadow: 0 0 15px rgba(0,0,0,0.5);*/
+	box-sizing: padding-box;
+	-webkit-box-shadow: 0 15px 20px rgba(0,0,0,.22),0 19px 60px rgba(0,0,0,.3);
+    -moz-box-shadow: 0 15px 20px rgba(0,0,0,.22),0 19px 60px rgba(0,0,0,.3);
+    -ms-box-shadow: 0 15px 20px rgba(0,0,0,.22),0 19px 60px rgba(0,0,0,.3);
+    box-shadow: 0 15px 20px rgba(0,0,0,.22),0 19px 60px rgba(0,0,0,.3);
+}
+
+#close{
+	display: block;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	height: 17px;
+	width: 17px;
+	background: url(../imgs/close.png) no-repeat;
+}
+
+.popup-subscribe-form h2{
+	line-height: 1em;
+	margin-bottom: 15px;
+	color: #ee2b45;
+	text-align: center;
+}
+
+.popup-subscribe-input{
+	display: block;
+	float: left;
+	width: 100%;
+	height: 50px;
+	margin-top: 25px;
+	border: 1px solid #e7eaed;
+	background-color: #fff;
+	outline: none;
+	padding-left: 25px;
+	font-size: 14px;
+}
+
+.subscribe-button {
+	width: 100%;
+	height: 50px;
+	line-height: 50px;
+	margin-top: 20px;
+	border: none;
+	background: #999999;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 14px;
+	cursor: pointer;
+}
+
+.subscribe-button:hover{
+	background: #ee2b45;
+}
 
 /*================================================================Footer*/
 
@@ -422,62 +650,103 @@ a:hover{
 	margin: 40px auto;
 }
 
-/*.footer-margin{margin-top: 100px;}*/
+.footer-costil{
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+}
+
 .footer{
-	height: 100px;
+	height: 120px;
 	padding-top: 40px;
+	background: #fff;
+}
+
+.footer-margin{
+	margin-top: 35px;
+}
+
+.first-footer-column,
+.second-footer-column,
+.third-footer-column,
+.fourth-footer-column,
+.fifths-footer-column,
+.sixths-footer-column,
+.last-footer-column{
+	float: left;
+	/*border: 1px solid green;*/
+}
+
+.first-footer-column{
+	width: 22%;
+}
+
+.second-footer-column{
+	width: 10%;
+}
+
+.third-footer-column{
+	width: 10%;
+}
+
+.fourth-footer-column{
+	width: 10%;
+}
+
+.fifths-footer-column{
+	width: 22%;
+	text-align: center;
+}
+
+.sixths-footer-column{
+	width: 12%;
+	text-align: center;
+}
+
+.last-footer-column{
+	width: 14%;
+	text-align: right;
 }
 
 .footer-logo{
-	margin-top: -20px;
-	margin-right: 100px;
-	float: left;
-}
-
-.footer-menu{
-	max-width: 600px;
-	font-size: 14px;
-	float: left;
-	margin-top: -15px;
+	margin-top: -10px;
 }
 
 .footer-menu li{
-	display: inline-block;
-	line-height: 45px;
-	vertical-align: top;
-	margin-right: 35px;
+	text-decoration: none;
+	display: block;
+	margin-bottom: 15px;
 }
 
 .footer-menu a{color: #787878;}
 .footer-menu a:hover{text-decoration: underline;}
 
 .synch-mail{
+	display: inline-block;
+	margin-top: -7px;
+	line-height: 30px;
+	color: #4e4e4e;
 	font-size: 16px;
 	font-weight: 700;
 	border-bottom: 5px solid #429fe6;
-	line-height: 30px;
-	display: inline-block;
-	margin-top: -10px;
-	margin-left: 95px;
 }
 
-.social{
-	float: right;
-	height: 33px;
-	margin: 0;
+.synch-mail:hover{
+	color: #2076b8;
+	border-bottom: 5px solid #2076b8;
 }
 
-.social li{
-	display: inline;
-	line-height: 32px;
-	margin-right: 10px;
+.gravpix{
+	/*color: #ee2b45;*/
+	color: #787878;
+	text-transform: uppercase;
 }
 
 /*============================================================================== Lecture_page */
 
 .speaker{
 	padding: 30px;
-	margin-bottom: 50px;
+	margin-bottom: 25px;
 	font-size: 18px;
 }
 
@@ -570,6 +839,15 @@ a:hover{
 	margin-bottom: 15px;
 }
 
+.data-info {
+	margin: 0 auto;
+	margin-top: 40px;
+	color: #999999;
+	min-height: 55px;
+	max-width: 345px;
+	font-size: 12px;
+}
+
 .lecturer-left{
 	margin-right: 30px;
 	float: left;
@@ -584,111 +862,153 @@ a:hover{
 	margin: 0 0 25px 30px;
 }
 
-/*============================================================================== Scedule */
-
-.scedule-item{
-	height: 75px;
-	margin-bottom: 2px;
+.lector-centre {
+	margin: 0 auto;
 }
 
-.scedule-marker-holder{
-	height: 100%;
-	background-color: #f6f6f6;
+/*============================================================================== Scedule */
+
+.week{
+	background-color: white;
+	padding: 0 70px 30px 70px;
+}
+
+.week-range{
+	height: 30px;
+	line-height: 30px;
+	margin: 0 -70px 30px -70px;
+	padding-left: 70px;
+	background: #429fe6;
+	font-size: 12px;
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: 700;
+	
+}
+
+.scedule-table{
+	width: 100%;
+	border-collapse: collapse;
+	font-size: 14px;
+}
+
+.scedule-table tr{
+	border: 1px solid #e7eaed;
+}
+
+.scedule-table td{
+	padding: 15px 45px 15px 25px;
+	vertical-align: top;
+}
+
+.scedule-table tr td:first-child{
+	position: relative;
+    width: 207px;
+    padding: 5px;
+    border: 1px solid #e7eaed;
+}
+
+.scedule-table tr td:nth-child(2){
+	width: 350px;
+}
+
+.scedule-data{
+	position: absolute;
+	margin: 5px 0 0 5px;
+	width: 47px;
+	padding: 5px;
+	background: #fff;
+	font-size: 11px;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.scedule-data-number{
+	font-size: 18px;
+	font-weight: 700px;
+	color: #429fe6;
+}
+
+.scedule-time{
+	position: absolute;
+	right: 5px;
+	margin: 5px;
+	padding: 5px;
+	background: #fff;
+	font-size: 14px;
+	color: #429fe6;
+}
+
+.scedule-table tr td:last-child{
+	vertical-align: middle;
+	padding-right: 30px;
+}
+
+.scedule-img-container{
+	float: left;
+	height: 90px;
+	width: 215px;
 	overflow: hidden;
 }
 
-.scedule-marker-holder img{
+.scedule-img{
 	width: 100%;
 }
 
-.scedule-event-marker, .scedule-course-marker{
-	line-height: 30px;
-	width: 100px;
-	text-align: center;
-	vertical-align: middle;
-	background-color: #429fe6;
-	color: #fff;
-	text-transform: uppercase;
-	position: absolute;
-}
-.scedule-course-marker{background-color: #ee2b45;}
-
-.scedule-data-and-time{
-	width: 80px;
-	height: 100%;
-	font-size: 12px;
-	text-align: center;
-	color: #5d5d5d;
-	padding: 10px 0;
-	float: left;
-}
-
-.scedule-item-title{
-	width: 375px;
-	height: 100%;
-	padding: 10px 25px 10px 0;
-	float: left;
-	font-size: 16px;
-}
-
-.scedule-item-title a{
+.sced-lecture-title{
+	margin-bottom: 5px;
 	color: #ee2b45;
-	font-size: 12px;
-	text-transform: uppercase;
 }
-.scedule-item-title a:hover{
-	text-decoration: underline;
-}
-
-.scedule-item-title h1{
-	font-size: 18px;
+.sced-course-title{
+	margin-bottom: 5px;
+	color: #429fe6;
 }
 
-.scedule-item-place{
-	width: 255px;
-	height: 100%;
-	float: left;
-	padding-top: 15px;
-	color: #999999;
-}
-
-.scedule-item-lector{
-	width: 100px;
-	height: 100%;
-	float: left;
-	padding-top: 15px;
+.scedule-register-button{
+	display: block;
+	margin: 0 auto;
+	width: 120px;
+	height: 30px;
+	background: #e7e7e8;
+    background: linear-gradient(to top, #ccc 0%, #e7e7e8 100%);
+	border-bottom: 3px solid #999999;
 	text-align: center;
-}
-
-.scedule-link{
-	color: #ee2b45;
-	font-size: 14px;
+	line-height: 27px;
+	color: #666666;
 	font-weight: 700;
-	text-transform: uppercase;
-	border-bottom: 7px solid #ee2b45;
-	line-height: 30px;
-	display: inline-block;
-	position: absolute;
-	right: 0;
-	top: 50%;
-	margin-right: 30px;
-	margin-top: -25px;
 }
 
-.scedule-link:hover{
-	color: #c20020;
-	border-color: #c20020;
+.scedule-register-button:hover{
+	background: #66ccff;
+    background: linear-gradient(to top, #45a1e8 0%, #66ccff 100%);
+    border-bottom: 3px solid #3887c3;
+    color: #fff;
+}
+
+.scedule-register-button:active{
+	background: #45a1e8;
+	border: none;
 }
 
 /*============================================================================== Course page */
+#urodstvo {
+	float: left;
+	width: 80px;
+	margin-bottom:150px;
+}
 
 .vidget{
-	height: 170px;
-	padding: 50px 0;
+	height: 100px;
+	padding: 25px 0;
+	margin-bottom: 10px;
+}
+
+.vidget-event{
+	padding: 45px 30;
 }
 
 .lecture-vidget{
-	height: 50px;
+	height: 60px;
 	position: relative;
 }
 
@@ -704,28 +1024,52 @@ a:hover{
 	margin-right: 70px;
 }
 
-.course-page-title h1{
-	font-size: 36px;
-	text-align: center;
-	text-transform: uppercase;
-	margin: 65px auto;
-	width: 50%;
+.course-page-title{
+	position: relative;
+	min-height: 450px;
+	background: #fff;
+	padding: 30px 70px;
 }
 
-.course-title-img{
-	text-align: center;
+.course-title-text-holder{
+	position: relative;
+	z-index: 100;
+	max-width: 65%;
+}
+
+.course-page-title h1{
+	 display: inline-block;
+	 margin-left: -70px;
+	 margin-top: 30px;
+	 line-height: 1em;
+	 background-color: #429fe6;
+	 padding: 30px 30px 30px 70px;
+	 color: #fff;
+	 font-size: 80px;
+}
+
+.course-page-title h2{
+	margin-top: 15px;
+	font-size: 18px;
+	font-weight: 700; 
+}
+
+.course-page-title img{
+	position: absolute;
+	z-index: 10;
+	right: 0;
+	top: 0;
+	margin: 30px;
+}
+
+.course-page-title img:after{
+	clear: both;
 }
 
 .course-page-description{
-	padding: 75px 75px 0px 75px;
-}
-
-.course-page-description h1{
-	font-size: 36px;
-	text-align: center;
-	text-transform: uppercase;
-	margin: 0 auto 55px auto;
-	width: 50%;
+	margin: 5px 70px;
+	padding-left: 30px;
+	border-left: 7px solid #f32239;
 }
 
 .course-page-description p{
@@ -741,7 +1085,7 @@ a:hover{
 }
 
 .course-page-lecture h1{
-	margin-bottom: 35px;
+	margin: 35px 0;
 }
 .course-page-lecture-description h2{
 	font-size: 18px;
@@ -816,7 +1160,163 @@ a:hover{
 	border-top: 1px solid #dbdbdb;
 	height: 30px;
 	width: 1025px;
-	margin: 35px 0px 35px 75px;
+	margin: 15px 0px 10px 75px;
+}
+
+/*============================================================================== Dinners */
+
+.dinners-page-header{
+	position: relative;
+	margin-bottom: 25px;
+	background: #fff;
+}
+
+.dinners-page-header img{
+	width: 100%;
+	margin-bottom: 15px;
+}
+
+.dinners-title-holder{
+	position: absolute;
+	top: 30px;
+	width: 700px;
+}
+
+.dinners-page-header h1{
+	display: inline-block;
+	line-height: 1.5em;
+	padding: 0 30px;
+	background: #429fe6;
+	font-size: 50px;
+	font-weight: 700;
+	color: #fff;
+}
+
+.dinners-page-header h2{
+	display: inline-block;
+	line-height: 50px;
+	padding: 0 30px;
+	background: #ee2b45;
+	text-transform: uppercase;
+	font-size: 24px;
+	font-weight: 700;
+	color: #fff;
+}
+
+.dinners-page-header h3{
+	margin-left: 30px;
+	font-size: 24px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.dinners-page-header p{
+	display: inline-block;
+	border-left: 5px solid #429fe6;
+	margin: 15px 125px 30px 70px;
+	padding-left: 35px;
+	font-size: 18px;
+}
+
+/*============================================================================== Certificate */
+
+.certificate-content{
+	margin-bottom: 25px;
+	padding: 30px 70px 0 70px;
+	background: white;
+}
+
+.cert-col{
+	padding-right: 70px;
+}
+
+.certificate-content ul,
+.new-goddamn-class ul{
+	list-style: square;
+	color: #429fe6;
+	font-size: 18px;
+}
+
+.certificate-content li{
+	margin-bottom: 30px;
+}
+
+.certificate-content span,
+.new-goddamn-class span{
+	color: #4e4e4e;
+}
+
+.certificate-content a{
+	color: #429fe6;
+}
+.certificate-content a:hover{
+	text-decoration: underline;
+}
+
+.cert-icons-holder{
+	margin-bottom: 25px;
+	background: #fff;
+}
+
+.cert-icons-col{
+	float: left;
+	min-height: 140px;
+	width: 20%;
+	padding: 20px 30px;
+	text-align: center;
+	font-size: 12px;
+	text-transform: uppercase;
+	font-weight: 700;
+	border-right: 1px solid #e7eaed;
+}
+
+.cert-icons-col img{
+	margin-bottom: 15px;
+}
+
+.cert-icons-col span{
+	color: #429fe6;
+}
+
+.certificate-vidget-holder{
+	position: absolute;
+	right: 0;
+	top: 338px;
+	width: 250px;
+}
+
+.new-goddamn-class{
+	background: white;
+	padding: 30px 70px 15px 50px;
+	margin-top: 25px;
+}
+
+.new-goddamn-class h1{
+	margin-bottom: 25px;
+	text-transform: uppercase;
+	font-size: 20px;
+}
+
+.new-goddamn-class ul{
+	margin-left: 70px;
+}
+
+.new-goddamn-class li{
+	margin-bottom: 15px;
+}
+
+.certificate-vidget{
+	background: #fff;
+	padding-bottom: 30px;
+}
+
+.cert-vidget-holder{
+	width: 250px;
+	margin: 0 auto;
+}
+
+.cert-synch-mail{
+	color: #ee2b45;
 }
 
 /*============================================================================== Courses */
@@ -847,6 +1347,10 @@ a:hover{
 .courses-title p{
 	z-index: 10;
 	position: relative;
+}
+
+.mac {
+	margin-bottom:40px;
 }
 
 /*============================================================================== Burger */
@@ -1054,23 +1558,42 @@ a:hover{
 		float: left;
 	}
 	
-	.course-title-img img{
+	.course-page-title{
+		padding: 30px 0;
+		height: auto;
+		min-height: 300px;
+	}
+	
+	.course-title-text-holder{
 		width: 100%;
-		margin-bottom: 35px;
+		margin: 0;
 	}
 	
 	.course-page-title h1{
-		font-size: 30px;
-		margin: 65px 0px 65px 25px;
-		text-align: left;
-	}
-	.course-page-description {
-		padding: 10px 25px 0px 25px;
+		 margin: 30px 0;
+		 line-height: 1em;
+		 padding: 30px 30px 30px 30px;	
+		 font-size: 40px;
 	}
 	
-	.course-page-lecture-description{
-		max-width: 100%;
-		margin: 0 25px;
+	.course-page-title h2{
+		display: none; 
+	}
+	
+	.course-page-title img{
+		width: 100%;
+		margin: 0;
+	}
+	
+	.course-page-description{
+		margin: 0 15px;
+		padding: 0;
+		border: none;
+	}
+	
+	.course-page-description p{
+		margin-bottom: 20px;
+		font-size: 18px;
 	}
 	
 	.lecture-vidget{
