@@ -79,15 +79,21 @@
 }
 
 #slider h1{
-  font-size: 83px;
+  font-size: 76px;
   font-weight: 100;
-  line-height: 100px;
+  line-height: 76px;
   display: inline-block;
-  margin-bottom: 35px;
+  margin-bottom: 25px;
+}
+
+#slider h2{
+  font-size: 68px;
+  font-weight: 100;
+  line-height: 68px;
+  margin-top: -25px;
 }
 
 .title-with-back{
-  line-height: 85px;
   display: inline-block;
   background-color: #429fe6;
   color: #fff;

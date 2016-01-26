@@ -50,6 +50,10 @@ a:hover{
 	text-decoration: underline;
 }
 
+.test-holder{
+	width: 650px;
+	margin: 0 auto;
+}
 
 .header{
 	height: 165px;
@@ -274,16 +278,6 @@ a:hover{
 	margin: 20px 0;
 }
 
-/*==============================================================================================Dinner*/
-
-.dinner{
-	background: #fff;
-}
-
-.dinner-img{
-	
-}
-
 /*==============================================================================================Event*/
 
 .course-holder{
@@ -403,6 +397,14 @@ float: left;
 	font-size: 12px;
 }
 
+.seven{
+	color: #999999;
+	min-height: 65px;
+	max-width: 345px;
+	font-size: 12px;
+	margin-left: 15px;
+}
+
 .data-and-time{
 	width: 33px;
 	height: 65px;
@@ -482,7 +484,7 @@ float: left;
 	float: left;
 	margin-right: 35px;
 }
-/*============================================================================== Event-page */
+
 .course-title-img {
 	text-align: center;
 }
@@ -522,19 +524,18 @@ float: left;
 	font-size: 18px;
 }
 
-/*================================================================Send form*/
+/*================================================================ Subscribe form */
 
-.subscribe-form{
+.const-subscribe-form{
 	margin: 0 auto;
 	width: 600px;
-	/*border: 1px solid black;*/
 }
 
-.subscribe-form h2{
+.const-subscribe-form h2{
 	margin-bottom: 25px;
 }
 
-.subscribe-form-input{
+.const-subscribe-form-input{
 	display: block;
 	float: left;
 	width: 350px;
@@ -547,7 +548,7 @@ float: left;
 	font-size: 14px;
 }
 
-.subscribe-form-btn{
+.const-subscribe-form-btn{
   width: 200px;
   height: 50px;
   line-height: 50px;
@@ -559,91 +560,114 @@ float: left;
   cursor: pointer;
 }
 
-.subscribe-form-btn:hover{
+.const-subscribe-form-btn:hover{
 	background: #ee2b45;
 }
 
-.form-holder{
-	margin: 0 auto;
-	width: 700px;
+/*================================================================ Popup form */
+
+#popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.22);
+    z-index: 999;
+    -webkit-animation: fade .6s;
+    -moz-animation: fade .6s;
+    animation: fade .6s;
+    overflow: auto;
 }
 
-/*================================================================Send form*/
-
-.popup-hide{
-	opacity: 0;
-    visibility: hidden;
-}
-
-.popup-show{
-	opacity: 1;
-    visibility: visible;
-}
-
-.popup-subscribe-form{
-	width: 550px;
-	position: fixed;
-	z-index: 1000;
-	right: 50px;
-	bottom: 50px;
-	background: #fff;
-	padding: 35px;
-	/*box-shadow: 0 0 15px rgba(0,0,0,0.5);*/
-	box-sizing: padding-box;
-	-webkit-box-shadow: 0 15px 20px rgba(0,0,0,.22),0 19px 60px rgba(0,0,0,.3);
+/* модальный блок */
+.popup {
+    width: 550px;
+    position: fixed;
+    z-index: 1000;
+    right: 50px;
+    bottom: 50px;
+    background: #fff;
+    padding: 35px;
+    -webkit-box-shadow: 0 15px 20px rgba(0,0,0,.22),0 19px 60px rgba(0,0,0,.3);
     -moz-box-shadow: 0 15px 20px rgba(0,0,0,.22),0 19px 60px rgba(0,0,0,.3);
     -ms-box-shadow: 0 15px 20px rgba(0,0,0,.22),0 19px 60px rgba(0,0,0,.3);
     box-shadow: 0 15px 20px rgba(0,0,0,.22),0 19px 60px rgba(0,0,0,.3);
 }
 
-#close{
-	display: block;
-	position: absolute;
-	top: 10px;
-	right: 10px;
-	height: 17px;
-	width: 17px;
-	background: url(../imgs/close.png) no-repeat;
+.subscribe-form{
+	width: 100%;
 }
 
-.popup-subscribe-form h2{
-	line-height: 1em;
-	margin-bottom: 15px;
-	color: #ee2b45;
-	text-align: center;
+.close {
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    height: 20px;
+    width: 20px;
+    background: url(../imgs/close.png) no-repeat center;
+    border: none;
+    cursor: pointer;
+}
+
+.popup h2{
+    line-height: 1em;
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #ee2b45;
+    text-align: center;
 }
 
 .popup-subscribe-input{
-	display: block;
-	float: left;
-	width: 100%;
-	height: 50px;
-	margin-top: 25px;
-	border: 1px solid #e7eaed;
-	background-color: #fff;
-	outline: none;
-	padding-left: 25px;
-	font-size: 14px;
+    display: block;
+    float: left;
+    width: 100%;
+    height: 50px;
+    margin-top: 25px;
+    border: 1px solid #e7eaed;
+    background-color: #fff;
+    outline: none;
+    padding-left: 25px;
+    box-sizing: border-box;
+    box-sizing: padding-box;
+    font-size: 14px;
 }
 
 .subscribe-button {
-	width: 100%;
-	height: 50px;
-	line-height: 50px;
-	margin-top: 20px;
-	border: none;
-	background: #999999;
-	color: #fff;
-	text-transform: uppercase;
-	font-size: 14px;
-	cursor: pointer;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    margin-top: 20px;
+    border: none;
+    background: #999999;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 14px;
+    cursor: pointer;
 }
 
 .subscribe-button:hover{
-	background: #ee2b45;
+    background: #ee2b45;
 }
 
-/*================================================================Footer*/
+
+/* анимация при появлении блоков с содержанием */
+@-moz-keyframes fade {
+    from { opacity: 0; }
+    to { opacity: 1 }
+}
+@-webkit-keyframes fade {
+    from { opacity: 0; }
+    to { opacity: 1 } 
+}
+@keyframes fade {
+    from { opacity: 0; }
+    to { opacity: 1 }
+}
+
+/*================================================================ Footer */
 
 .addthis_native_toolbox{
 	width: 460px;
@@ -1004,7 +1028,7 @@ float: left;
 }
 
 .vidget-event{
-	padding: 45px 30;
+	padding: 45px 30px;
 }
 
 .lecture-vidget{
@@ -1049,9 +1073,10 @@ float: left;
 }
 
 .course-page-title h2{
+	width: 530px;
 	margin-top: 15px;
-	font-size: 18px;
-	font-weight: 700; 
+	font-size: 30px;
+	font-weight: 400; 
 }
 
 .course-page-title img{
@@ -1454,8 +1479,17 @@ float: left;
 	#slider, .menu, .nav-holder, .footer-logo, .footer-menu{
 		display:none;
 	}
-
-	.ad{
+	
+	#popup-overlay{
+		z-index: -2000;
+		background: none;
+	}
+	
+	.popup {
+		display: none;
+	}
+	
+	.ad-norma{
 		display: block;
 		width: 100%;
 		height: 50px;
@@ -1679,5 +1713,23 @@ float: left;
 	
 	.addthis_native_toolbox{
 		width: 90%;
+	}
+	
+	.footer{
+		height: 155px;
+	}
+	
+	.first-footer-column,
+	.second-footer-column,
+	.third-footer-column,
+	.fourth-footer-column,
+	.fifths-footer-column,
+	.sixths-footer-column,
+	.last-footer-column{
+		float: none;
+	}
+	
+	.sixths-footer-column img{
+		margin-bottom: 15px;
 	}
 }
