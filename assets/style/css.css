@@ -5,6 +5,7 @@ html {
 body {
   font-family: 'Lato', sans-serif;
   font-size: 14px;
+  font-weight: normal;
   background-color: #e7eaed;
   color: #4e4e4e;
   padding: 0;
@@ -143,17 +144,18 @@ a:hover{
 	margin-bottom: 55px;
 	text-align: center;
 }
+
 .hr {
-    border: none; /* Убираем границу */
-    background-color: red; /* Цвет линии */
-    color: red; /* Цвет линии для IE6-7 */
-    height: 2px; /* Толщина линии */
+    border: none;
+    background-color: red;
+    color: red;
+    height: 2px;
 }
 /*=================================================================================Content*/
 .index-about{
-	height: 300px;
+	height: 350px;
 	margin: 25px 0px 35px 0px;
-	padding: 90px 70px 70px 70px;
+	padding: 65px 70px 70px 70px;
 	color: #5c5c5c;
 	background: #fff url(../imgs/05.png) no-repeat left bottom;
 }
@@ -282,13 +284,6 @@ a:hover{
 
 .course-holder{
 	width: 770px;
-	float: right;
-	margin-bottom: 30px;
-}
-
-.course-holder-left{
-	width: 770px;
-	float: left;
 	margin-bottom: 30px;
 }
 
@@ -397,12 +392,12 @@ float: left;
 	font-size: 12px;
 }
 
-.seven{
+.lecture-foure{
 	color: #999999;
-	min-height: 65px;
+	min-height: 95px;
 	max-width: 345px;
+	margin-bottom: 35px;
 	font-size: 12px;
-	margin-left: 15px;
 }
 
 .data-and-time{
@@ -472,6 +467,7 @@ float: left;
 	margin-bottom: 30px;
 	font-size: 24px;
 }
+
 /*============================================================================== Event-page */
 
 .event-page-lecturer{
@@ -1014,180 +1010,6 @@ float: left;
 	border: none;
 }
 
-/*============================================================================== Course page */
-#urodstvo {
-	float: left;
-	width: 80px;
-	margin-bottom:150px;
-}
-
-.vidget{
-	height: 100px;
-	padding: 25px 0;
-	margin-bottom: 10px;
-}
-
-.vidget-event{
-	padding: 45px 30px;
-}
-
-.lecture-vidget{
-	height: 60px;
-	position: relative;
-}
-
-.vidget-holder{
-	margin: 0 auto;
-	width: 160px;
-}
-
-.lecture-vidget-holder{
-	width: 150px;
-	position: absolute;
-	right: 0;
-	margin-right: 70px;
-}
-
-.course-page-title{
-	position: relative;
-	min-height: 450px;
-	background: #fff;
-	padding: 30px 70px;
-}
-
-.course-title-text-holder{
-	position: relative;
-	z-index: 100;
-	max-width: 65%;
-}
-
-.course-page-title h1{
-	 display: inline-block;
-	 margin-left: -70px;
-	 margin-top: 30px;
-	 line-height: 1em;
-	 background-color: #429fe6;
-	 padding: 30px 30px 30px 70px;
-	 color: #fff;
-	 font-size: 80px;
-}
-
-.course-page-title h2{
-	width: 530px;
-	margin-top: 15px;
-	font-size: 30px;
-	font-weight: 400; 
-}
-
-.course-page-title img{
-	position: absolute;
-	z-index: 10;
-	right: 0;
-	top: 0;
-	margin: 30px;
-}
-
-.course-page-title img:after{
-	clear: both;
-}
-
-.course-page-description{
-	margin: 5px 70px;
-	padding-left: 30px;
-	border-left: 7px solid #f32239;
-}
-
-.course-page-description p{
-	margin-bottom: 20px;
-	font-size: 18px;
-}
-
-.course-page-lecture{
-	padding: 0px 75px;
-	min-height: 400px;
-	position: relative;
-	border: 1px;
-}
-
-.course-page-lecture h1{
-	margin: 35px 0;
-}
-.course-page-lecture-description h2{
-	font-size: 18px;
-	text-transform: uppercase;
-}
-.course-page-lecture h3{
-	text-transform: uppercase;
-}
-
-.course-page-lector{
-	height: 135px;
-	width: 373px;
-	font-size: 12px;
-	margin-top: 30px;
-}
-
-.course-page-lecture-left img{
-	width: 373px;
-}
-
-.course-page-lector-avatar{
-	width: 134px;
-	float: right;
-	margin-left: 35px;
-}
-
-.course-page-lector img{
-	width: 134px;
-	float: right;
-	margin-left: 35px;
-	margin-top: -10px;
-}
-
-.course-page-lector h3{
-	font-size: 14px;
-	margin-top: 15px;
-}
-
-.course-page-lector a{
-	display: inline-block;
-	margin-top: 10px;
-	font-size: 14px;
-	text-transform: uppercase;
-	font-weight: 700;
-	color: #4e4e4e;
-}
-.course-page-lector a:hover{text-decoration: underline;}
-
-.course-page-profession {color: #999999;}
-
-.course-page-lecture-description{
-	max-width: 615px;
-	margin-left: 55px;
-	font-size: 18px;
-}
-
-.course-page-register{
-	color: #ee2b45;
-	font-size: 14px;
-	font-weight: 700;
-	text-transform: uppercase;
-	border-bottom: 7px solid #ee2b45;
-	line-height: 30px;
-	display: inline-block;
-	position: absolute;
-	bottom: 0;
-	right: 0;
-	margin-right: 70px;
-}
-
-.horisontal-line{
-	border-top: 1px solid #dbdbdb;
-	height: 30px;
-	width: 1025px;
-	margin: 15px 0px 10px 75px;
-}
-
 /*============================================================================== Dinners */
 
 .dinners-page-header{
@@ -1506,33 +1328,31 @@ float: left;
     }
 
 	.header{
-		height: 150px;
-		line-height: 50px;
-		vertical-align: middle;
+		height: 80px;
 	}
 
 	.logo {
-		position: relative;
-		left: 50%;
-		margin-left: -160px;
-		margin-top: 90px;
-		margin-bottom: 50px;
+		width: 80%;
+		margin-left: 30px;
+		margin-top: 50px;
 	}
 
 	.index-about{
 		height: auto;
-		margin: 50px 0px;
+		margin-bottom: 50px;
 		padding: 25px;
 	}
 	.index-about-title{
-		height: 100px;
-		line-height: 100px;
-		vertical-align: middle;
+		height: 50px;
+		line-height: 50px;
 		margin: 0;
 	}
 	.index-about h1{
 		font-size: 30px;
-		margin-left: -25px;
+		margin-left: -50px;
+	}
+	.index-about h2{
+		margin-top: 20px;
 	}
 	.index-about p{margin-bottom: 35px;}
 
@@ -1556,11 +1376,16 @@ float: left;
 		font-size: 24px;
 		text-transform: uppercase;
 		margin-bottom: 25px;
+		margin-top: 25px;
 	}
 	
 	.course-description{
 		width: 100%;
 		margin-bottom: 35px;
+		padding: 0;
+	}
+	
+	.wide-course-description{
 		padding: 0;
 	}
 	
@@ -1592,77 +1417,7 @@ float: left;
 		float: left;
 	}
 	
-	.course-page-title{
-		padding: 30px 0;
-		height: auto;
-		min-height: 300px;
-	}
-	
-	.course-title-text-holder{
-		width: 100%;
-		margin: 0;
-	}
-	
-	.course-page-title h1{
-		 margin: 30px 0;
-		 line-height: 1em;
-		 padding: 30px 30px 30px 30px;	
-		 font-size: 40px;
-	}
-	
-	.course-page-title h2{
-		display: none; 
-	}
-	
-	.course-page-title img{
-		width: 100%;
-		margin: 0;
-	}
-	
-	.course-page-description{
-		margin: 0 15px;
-		padding: 0;
-		border: none;
-	}
-	
-	.course-page-description p{
-		margin-bottom: 20px;
-		font-size: 18px;
-	}
-	
-	.lecture-vidget{
-		height: 100px;
-	}
-
-	.lecture-vidget-holder{
-		width: 160px;
-		position: relative;
-		margin: 0 auto;
-	}
-
-	.course-page-lecture {
-		padding: 0px;
-		padding-bottom: 60px;
-	}
-	
-	.course-page-lecture img{
-		width: 100%;
-	}
-	
-	.course-page-lecture h1 {
-		text-align: center;
-	}
-	
-	.course-page-lector {
-		padding-left: 25px;
-		width: 100%;
-	}
-	
-	.course-page-lector img{
-		display: none;
-	}
-	
-	.horisontal-line{
+	.const-subscribe-form{
 		display: none;
 	}
 	
@@ -1716,7 +1471,7 @@ float: left;
 	}
 	
 	.footer{
-		height: 155px;
+		height: 120px;
 	}
 	
 	.first-footer-column,
@@ -1732,4 +1487,9 @@ float: left;
 	.sixths-footer-column img{
 		margin-bottom: 15px;
 	}
+	
+	.last-footer-column{
+		display: none;
+	}
+	
 }

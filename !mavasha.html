@@ -1,0 +1,82 @@
+<html>
+<head>
+	<title>Курс | Синхронизация</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="favicon.png" type="image/png">
+    <link rel="stylesheet" href="assets/style/bootstrap.css">
+    <link rel="stylesheet" href="assets/style/css.css">
+    <link rel="stylesheet" href="assets/style/course_page.css">
+    
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,700,900,300' rel='stylesheet' type='text/css'>
+
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    
+</head>
+<body>
+	<div class="container">
+		<div class="course-page-slider">
+			<h1>Lecturers</h1>
+			<div class="c-p-slider-nav-holder">
+				<div id="cpright" onMouseOver="slide()"></div>
+				<div id="cpleft" onMouseOver="slideback()"></div>
+			</div>
+			<div id="cpslidercontent">
+				<div class="c-p-slider-lecturer">
+					<img src="assets/imgs/lecturers/artem.jpg">
+					<h2>КУБЛАНОВСКИЙ ЮРИЙ</h2>
+					<p>Русский поэт, публицист, эссеист, критик, искусствовед</p>
+				</div>
+				<div class="c-p-slider-lecturer">
+					<img src="assets/imgs/lecturers/artem.jpg">
+					<h2>КУБЛАНОВСКИЙ ЮРИЙ</h2>
+					<p>Русский поэт, публицист, эссеист, критик, искусствовед</p>
+				</div>
+				<div class="c-p-slider-lecturer">
+					<img src="assets/imgs/lecturers/artem.jpg">
+					<h2>КУБЛАНОВСКИЙ ЮРИЙ</h2>
+					<p>Русский поэт, публицист, эссеист, критик, искусствовед</p>
+				</div>
+				<div class="c-p-slider-lecturer">
+					<img src="assets/imgs/lecturers/artem.jpg">
+					<h2>КУБЛАНОВСКИЙ ЮРИЙ</h2>
+					<p>Русский поэт, публицист, эссеист, критик, искусствовед</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+<script language="JavaScript">
+	var slidepos = 4;
+	var slidediv = document.getElementById('cpslidercontent');
+	var sliding = false;
+
+	function slide() {
+		sliding = clearInterval(sliding);
+		
+		sliding = setInterval(function() {
+			if( slidepos < 400 ) {
+				slidepos++;
+				slidediv.style.left = slidepos; 
+			} else {
+				sliding = clearInterval(sliding);
+			}
+		}, 10 );
+	}
+
+	function slideback() {
+		sliding = clearInterval(sliding);
+		
+		sliding = setInterval(function() {
+			if(slidepos > 4) {
+				slidepos--;
+				slidediv.style.left = slidepos;
+			} else {
+				sliding = clearInterval(sliding);
+			}
+		}, 10 );
+	}
+	
+</script>
+	
+</body>

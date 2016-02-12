@@ -1,0 +1,494 @@
+h1{
+    line-height: 1em;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.course-page-header{
+    position: relative;
+}
+
+.course-page-header img{
+    width: 100%;
+}
+
+.course-title-holder{
+	position: absolute;
+	top: 20px;
+}
+
+.course-title-holder h1{
+	display: inline-block;
+	padding: 15px;
+	background: rgba(66, 159, 230, 0.8);
+	text-transform: none;
+	font-size: 46px;
+	color: #fff;
+	border-right: 3px solid #429fe6;
+}
+
+.course-title-holder h2{
+	display: inline-block;
+	padding: 15px;
+	background: rgba(238, 43, 69, 0.7);
+	line-height: 1em;
+	text-transform: uppercase;
+	font-size: 24px;
+	color: #fff;
+	border-right: 3px solid #ee2b45;
+}
+
+.course-page-description{
+    padding: 15px 15px 15px 40px;
+    background: #fff;
+    font-size: 18px;
+}
+
+.course-page-description h1{
+    margin-bottom: 15px;
+    font-size: 24px;
+    text-transform: none;
+}
+
+.course-information{
+    float: right;
+    width: 420px;
+    padding: 10px 20px;
+    border: 3px solid #429fe6;
+    font-size: 16px;
+}
+
+.course-information h1{
+    text-transform: none;
+    color: #429fe6;
+}
+
+.course-information h2{
+    float: left;
+    margin: 15px 15px 0 0;
+    text-transform: none;
+}
+
+.course-information p:nth-child(even) { 
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.course-information-widget{
+    float: right;
+    margin-top: 10px;
+    width: 160px;
+}
+
+.course-information-widget-right{
+    float: right;
+    margin-top: 65px;
+    width: 160px;
+}
+
+.course-information-widget-left{
+    float: left;
+    margin-top: 45px;
+    width: 160px;
+}
+
+.course-benefits{
+    padding: 0 15px 15px 40px;
+    background: #fff;
+}
+
+.course-benefits h1{
+    margin-bottom: 20px;
+}
+
+.benefit{
+    background: #a6d8ff;
+}
+
+.second-benefit{
+    background: #80c3f6;
+}
+
+.second-benefit .benefit-number{
+    background: #80c3f6;
+    color: #fff;
+}
+
+.third-benefit{
+    background: #429fe6;
+}
+
+.fourth-benefit {
+    background: #2c96e8;
+}
+
+.fourth-benefit .benefit-number{
+    background: #2c96e8;
+    color: #fff;
+}
+
+.third-benefit .benefit-number{
+    color: #429fe6;
+}
+
+.benefit-number{
+    width: 80px;
+    line-height: 80px;
+    float: left;
+    background: #fff;
+    color: #a6d8ff;
+    text-align: center;
+    font-size: 48px;
+    font-weight: 700px;
+}
+
+.benefit-text{
+    height: 80px;
+    padding-left: 120px;
+    padding-top: 20px;
+    font-size: 18px;
+    color: #ffffff;
+}
+
+/*========================== slider*/
+
+.course-page-slider{
+    position: relative;
+    height: 257px;
+    margin: 10px 0;
+    overflow: hidden;
+    background: #cdd0d3;
+}
+
+.course-page-slider h1{
+    display: inline-block;
+    position: absolute;
+    top: 30px;
+    left: 50px;
+}
+
+#cpslidercontent{
+    position: absolute;
+    top: 35%;
+    width: 150%;
+    padding-left: 50px;
+}
+
+.c-p-slider-nav-holder{
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+}
+
+#cpright{
+    width: 40px;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    z-index: 2;
+    background: #bfc2c4;
+    cursor: pointer;
+}
+
+#cpleft{
+    width: 40px;
+    height: 100%;
+    z-index: 2;
+    background: #bfc2c4;
+    cursor: pointer;
+}
+
+#cpright:hover, #cpleft:hover{
+    background: #a9abad;
+}
+
+.c-p-slider-lecturer {
+    height: 135px;
+    width: 340px;
+    float: left;
+    margin-right: 15px;
+    font-size: 12px;
+}
+
+.slider-lecturer-link{
+    display: inline-block;
+    margin-top: 25px;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.slider-lecturer-link:hover{
+    text-decoration: underline;
+    color: #4e4e4e;
+}
+
+.c-p-slider-lecturer img{
+    margin-right: 15px;
+    float: left;
+}
+
+/*end*/
+
+.course-irregular-title{
+    background: #429fe6;
+    padding-left: 40px;
+    line-height: 80px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.c-p-lecture-title{
+    padding: 0 40px;
+    background: #fff;
+}
+
+.c-p-lecture-title h1{
+    font-size: 24px;
+    line-height: 3em;
+}
+
+.cpright{
+    text-align: right;
+}
+
+.course-page-lecture{
+    background: #fff;
+    border-top: 3px solid #429fe6;
+    border-bottom: 3px solid #429fe6;
+    border-collapse: collapse;
+}
+
+.lecture-img-container{
+    position: relative;
+    max-width: 370px;
+    overflow: hidden;
+}
+
+.lecture-img-container img{
+    height: 100%;
+    max-height: 500px;
+}
+
+.course-page-lecture-date{
+    display: inline-block;
+    position: absolute;
+    top: 15px;
+    z-index: 2;
+	padding: 10px 20px;
+	background: rgba(66, 159, 230, 0.8);
+	font-size: 26px;
+	color: #fff;
+	text-align: center;
+	vertical-align: middle;
+	border-right: 3px solid #ee2b45;
+}
+
+.second-costil{
+    margin-top: 60px;
+}
+
+
+.course-page-lecture-date-r{
+    display: inline-block;
+    position: absolute;
+    top: 15px;
+    right: 0;
+    z-index: 2;
+	padding: 10px 20px;
+	background: rgba(66, 159, 230, 0.8);
+	font-size: 26px;
+	color: #fff;
+	text-align: center;
+	border-left: 3px solid #ee2b45;
+}
+
+.course-page-lecture-date p, .course-page-lecture-date-r p{
+    display: inline-block;
+    line-height: 1em;
+    float: left;
+    font-weight: 300;
+}
+
+.day{
+    font-weight: 700 !important;
+}
+
+.year{
+    width: 45px;
+    height: 100%;
+    font-size: 13px;
+    text-transform: uppercase;
+}
+
+.lecture-lecturers{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    z-index: 3;
+    padding: 10px 30px;
+    background: rgba(66, 159, 230, 0.8);
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.lecture-lecturers a{color: #fff; font-weight: normal;}
+.lecture-lecturers a:hover{text-decoration: underline;}
+
+.lecture-text-container{
+    padding: 15px 30px;
+    vertical-align: top;
+    font-size: 18px;
+}
+
+.lecture-text-container h3{
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.course-page-list {
+    margin-left: 20px;
+    color: #ee2b45;
+    font-size: 16px;
+}
+
+.course-page-list li{
+    margin-bottom: 10px;
+}
+
+.course-page-list p{
+    color: #4e4e4e;
+}
+
+/*==================================== mobile*/
+
+@media (max-width: 768px) {
+    .course-page-header{
+		min-height: 250px;
+		overflow: hidden;
+	}
+	
+	.course-page-header img{
+	    width: auto;
+	}
+	
+	.course-title-holder{
+		position: absolute;
+		top: 20px;
+	}
+	
+	.course-title-holder h1{
+	    width: 100%;
+    	font-size: 32px;
+    	border: none;
+    }
+    
+    .course-title-holder h2{
+    	border: none;
+    }
+	
+	.course-page-description{
+	    padding: 15px;
+	}
+	
+	.course-information{
+        width: 100%;
+        padding: 10px 10px;
+        border: 3px solid #429fe6;
+        margin-top: 30px;
+    }
+    
+    .course-information h2{
+        float: none;
+        margin: 15px 0;
+    }
+    
+    .course-information-widget{
+        float: none;
+        width: 200px;
+    }
+    
+    .course-benefits{
+        padding: 15px;
+        background: #fff;
+    }
+    
+    .course-benefits h1{
+        margin-bottom: 25px;
+    }
+    
+    .benefit-number{
+        width: 60px;
+        line-height: 80px;
+        font-size: 36px;
+    }
+    
+    .benefit-text{
+        min-height: 80px;
+        padding-left: 80px;
+        padding-top: 10px;
+        line-height: 1em;
+    }
+    
+    .course-page-slider{
+        height: auto;
+        min-height: 400px;
+        position: relative;
+        margin: 15px 0;
+        overflow: visible;
+    }
+    
+    .course-page-slider h1{
+        display: inline-block;
+        position: relative;
+        top: 30px;
+        left: 30px;
+    }
+    
+    #cpslidercontent{
+        position: relative;
+        top: 45px;
+        width: 100%;
+        padding-left: 20px;
+        /*border: 1px solid red;*/
+    }
+    
+    .c-p-slider-lecturer{
+        width: 100%;
+        float: none;
+        margin: 10px 0;
+    }
+    
+    .slider-lecturer-link{
+        margin-top: 15px;
+    }
+    
+    .c-p-slider-lecturer img{
+        width: 100px;
+    }
+    
+    .course-irregular-title{
+        padding-left: 30px;
+        line-height: 70px;
+    }
+    
+    .c-p-lecture-title{
+        padding: 15px 10px 15px 30px;
+    }
+    
+    .c-p-lecture-title h1{
+        line-height: 1em;
+    }
+    
+    .course-page-lecture{
+        /*background: #fff;*/
+        /*border-top: 3px solid #429fe6;*/
+        /*border-bottom: 3px solid #429fe6;*/
+        /*border-collapse: collapse;*/
+        display: none;
+    }
+    
+}

@@ -43,6 +43,8 @@ jQuery(document).ready(function ($) {
 
 });
 
+// course page slider
+
 
 
 //hamburger

@@ -79,7 +79,7 @@
 }
 
 #slider h1{
-  font-size: 76px;
+  font-size: 70px;
   font-weight: 100;
   line-height: 76px;
   display: inline-block;
@@ -87,8 +87,8 @@
 }
 
 #slider h2{
-  font-size: 68px;
-  font-weight: 100;
+  font-size: 55px;
+  font-weight: 200;
   line-height: 68px;
   margin-top: -25px;
 }
@@ -118,7 +118,7 @@
 }
 
 .cert-slider-text-holder h1{
-  line-height: 85px;
+  line-height: 75px;
   display: inline-block;
   margin-bottom: 5px !important;
   background-color: #429fe6;
